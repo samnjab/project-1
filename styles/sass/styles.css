@@ -226,6 +226,91 @@ html {
   padding: 0;
 }
 
+html {
+  color: #2C2C2C;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 138px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 80px;
+  line-height: 92px;
+}
+
+h3 {
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+h4 {
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+
+.button {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.menu-nav {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 29px;
+  text-decoration: none;
+}
+
+.email {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  font-size: 26px;
+  letter-spacing: 1.1px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.img-box {
+  flex-basis: 50%;
+}
+.img-box img {
+  max-width: 100%;
+}
+
 body {
   font-family: "Playfair Display";
   font-weight: 500;

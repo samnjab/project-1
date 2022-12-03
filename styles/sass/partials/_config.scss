@@ -1,0 +1,61 @@
+@use "variables" as *;
+@mixin style-1{
+    font-family: $font-1;
+    font-weight: map-get($font-weights, bold);
+    font-style:italic;
+}
+@mixin style-2{
+    font-family: $font-2;
+    font-weight:map-get($font-weights, reg)
+}
+
+h1, 
+h2,
+h3{
+    @include style-1();
+}
+p{
+    font-family: $font-2;
+    font-weight: map-get($font-weights, reg );
+}
+h1{
+    font-size: 138px;
+    text-align:center;
+}
+h2{
+    font-size: 80px;
+    line-height: 92px;
+}
+h3{
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+h4{
+    font-size: 32px;
+    letter-spacing: 1px;
+}
+.button{
+    @include style-1();
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height:32px;
+    text-transform: uppercase;
+}
+p{
+    @include style-2();
+    font-size: 20px;
+    line-height: 32px;
+}
+.menu-nav{
+    @include style-1();
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 29px;
+    text-decoration: none;
+}
+.email{
+    @include style-1();
+    font-size:26px;
+    letter-spacing: 1.1px;
+}

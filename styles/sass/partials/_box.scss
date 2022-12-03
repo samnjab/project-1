@@ -1,0 +1,7 @@
+@use "variables" as *;
+.img-box{
+    flex-basis:50%;
+    img{
+        max-width:100%;
+    }
+}
