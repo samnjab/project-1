@@ -1,0 +1,15 @@
+$canary:#FDFA69;
+$sea-green:#4CEEA7;
+$black:#2C2C2C;
+$white:#FAFAFA;
+$ice:#EFFDF3;
+
+$font-1:'Play Fair Display';
+$font-2:'Roboto';
+$font-weights:("regular":400, "bold":700, "thin":100, "medium":500);
+$font-forms:("none":0, "italic":1);
+
+@function weight($weight-name){
+    @return map-get($font-weights, $weight-name);
+}
+
