@@ -1,15 +1,27 @@
+$mobile: 800px;
+$tablet:1000px;
+
 $canary:#FDFA69;
 $sea-green:#4CEEA7;
 $black:#2C2C2C;
 $white:#FAFAFA;
 $ice:#EFFDF3;
 
-$font-1:'Play Fair Display';
+$font-1:'Playfair Display';
 $font-2:'Roboto';
-$font-weights:("regular":400, "bold":700, "thin":100, "medium":500);
-$font-forms:("none":0, "italic":1);
+$font-weights:("thin":100,"regular":400, "medium":500,"bold":700);
 
-@function weight($weight-name){
-    @return map-get($font-weights, $weight-name);
+@mixin flex-center($direction:row, $main-axis:flex-start, $cross-axis:flex-start){
+    display:flex;
+    flex-direction:$direction;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
 }
+
+@mixin mobile{
+    @media (max-width:$mobile){
+        @content
+    }
+}
+
 

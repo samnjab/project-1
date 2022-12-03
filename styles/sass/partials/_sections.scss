@@ -2,8 +2,6 @@
 
 body{
     font-family: $font-1;
-    // font-weight: weights($font-weights, "bold");
-    // font-style: weights($font-forms, "italic");
-    font-weight: 400;
+    font-weight: map-get($font-weights, medium );
     font-style: italic;
 }
