@@ -60,10 +60,8 @@ header{
 }
 .blog{
     background-color: $white;
-    padding:80px 0;
-    border:yellow 4px solid;
     .wrapper{
-        border:yellow 4px solid;
+        max-width:1500px;
         width:100%;
         @include flex-center();
         flex-wrap: wrap;
@@ -117,5 +115,12 @@ header{
         }
     }
 }
-
+.banner{
+    width:100vw;
+    padding:0;
+    .wrapper{
+        max-width:1500px;
+        width:100%;
+    }
+}
 
