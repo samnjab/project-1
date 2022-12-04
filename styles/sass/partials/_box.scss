@@ -14,3 +14,14 @@
 .text-box{
     @include flex-center(column, space-between,flex-start);
 }
+.icon-box{
+    background-color: $sea-green;
+    width: calc(3em + 3rem);
+    padding:1.5rem;
+    @include flex-center(row, center, center);
+    border-radius: calc(1.5rem + 1.5em);
+    margin:2rem;
+}
+.link-box{
+    @include flex-center(row, space-between, baseline);
+}
