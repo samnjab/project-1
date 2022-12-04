@@ -1,13 +1,12 @@
 @use "variables" as *;
 .img-box{
-    flex-basis:50%;
+    @include flex-center();
     img{
         width:100%;
         height:auto;
         object-fit: cover;
     }
 }
-
 .img-1{
     width:100vw;
     height:100vh;

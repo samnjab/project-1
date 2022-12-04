@@ -10,6 +10,7 @@ $ice:#EFFDF3;
 $font-1:'Playfair Display';
 $font-2:'Roboto';
 $font-weights:("thin":100,"reg":400, "medium":500,"bold":700);
+
 @mixin style-1 {
     font-family: $font-1;
     font-weight: map-get($font-weights, bold);
@@ -53,13 +54,14 @@ $font-weights:("thin":100,"reg":400, "medium":500,"bold":700);
     max-width:$max-width;
     width:100%;
 }
-@mixin wrap($margin, $number-in-a-row:2, $min-width, $max-width){
+@mixin wrap($margin:0px, $number-in-a-row:2, $min-width, $max-width){
     margin:0 $margin;
     flex-basis:calc((100%/$number-in-a-row) - (2*$margin) );
     min-width:$min-width;
+    flex-grow:1;
     max-width:$max-width;
 }
-@mixin detach($top: 0px, $right: 25px, $bottom: 25px, $left: 0px){
+@mixin detach($top: 0px, $right: 0px, $bottom: 0px, $left: 0px){
     position:relative;
     top:$top;
     right:$right;
