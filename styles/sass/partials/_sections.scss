@@ -108,6 +108,9 @@ header{
             flex-basis:50%;
             .text-box{
                 margin:15px;
+                h4{
+                    margin:10px;
+                }
             }
             .icon-box{
                 align-self: flex-start;
@@ -123,4 +126,28 @@ header{
         width:100%;
     }
 }
+.profile{
+    .wrapper{
+        @include flex-center();
+        flex-wrap:wrap;
+        .img-box{
+            flex-basis:25%;
+            margin:0 20px 0 20px;
+            background-color: $canary;
+            img{
+                // position:relative;
+                // bottom:25px;
+                // right:25px;
+                @include detach();
+            }
+        }
+        .text-box{
+            flex-basis:60%;
+            margin:0 0 0 20px;
+            h3{
+                margin:0 0 20px 0;
+            }
 
+        }
+    }
+}

@@ -2,8 +2,9 @@
 .img-box{
     flex-basis:50%;
     img{
-        max-width:100%;
+        width:100%;
         height:auto;
+        object-fit: cover;
     }
 }
 
@@ -16,11 +17,15 @@
 }
 .icon-box{
     background-color: $sea-green;
-    width: calc(3em + 3rem);
-    padding:1.5rem;
+    padding:1.5em;
     @include flex-center(row, center, center);
-    border-radius: calc(1.5rem + 1.5em);
+    border-radius: 50%;
     margin:2rem;
+    i{
+        width:4rem;
+        height:4rem;
+        @include flex-center(row, center, center);
+    }
 }
 .link-box{
     @include flex-center(row, space-between, baseline);
