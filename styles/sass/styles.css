@@ -230,6 +230,15 @@ html {
   color: #2C2C2C;
 }
 
+a {
+  color: #2C2C2C;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 h1,
 h2,
 h3 {
@@ -246,6 +255,7 @@ p {
 h1 {
   font-size: 138px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -302,6 +312,7 @@ p {
 .wrapper {
   width: 90%;
   margin: 0 auto;
+  max-width: 1080px;
 }
 
 .img-box {
@@ -311,8 +322,50 @@ p {
   max-width: 100%;
 }
 
-body {
-  font-family: "Playfair Display";
-  font-weight: 500;
-  font-style: italic;
+.img-1 {
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../../assets/header-image.jpg);
+  background-size: cover;
+  position: relative;
+}
+header .wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+header .wrapper nav {
+  align-self: flex-end;
+  width: 40%;
+}
+header .wrapper nav .menu-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header .wrapper nav .menu-nav .active {
+  border-bottom: #4CEEA7 5px solid;
+}
+header .wrapper h1 {
+  z-index: 10;
+  margin: 10px;
+}
+header .header-img {
+  width: 40%;
+  border: 50px #FDFA69 solid;
+  border-right: 0px;
+  position: absolute;
+  bottom: -25vh;
+  right: 0;
+  z-index: 0;
 }/*# sourceMappingURL=styles.css.map */
