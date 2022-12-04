@@ -1,10 +1,7 @@
 @use "variables" as *;
 
 header{
-    width:100vw;
-    height:100vh;
-    background-image: url(../../../assets/header-image.jpg);
-    background-size:cover;
+    @include fix-header("../../../assets/header-image.jpg");
     position:relative;
     .wrapper{
         height:100vh;
@@ -22,6 +19,7 @@ header{
             }
         }
         h1{
+            @include heading-styler;
             z-index:20;
             margin:10px;
         }
@@ -35,66 +33,61 @@ header{
         right:0;
         z-index:10;
         img{
-            position:relative;
-            z-index:10;
+            @include z-layer(10);
+            // position:relative;
+            // z-index:10;
         }
     }
 }
 .about{
     background-color:$ice;
     padding-top:25vh;
-    position:relative;
-    z-index:0;
+    @include z-layer(0);
+    // position:relative;
+    // z-index:0;
     .wrapper{
         @include flex-center(column, center, center);
         h3{
-            margin:20px 0;
+            @include heading-styler;
         }
         p{
-            margin:20px 0;
-            display:inline-block;
-            max-width:800px;
-            text-align: center;
+            @include p-styler(800px, 100px);
         }
     } 
 }
 .blog{
     background-color: $white;
     .wrapper{
-        max-width:1500px;
-        width:100%;
+        @include bleed(1500px);
         @include flex-center();
         flex-wrap: wrap;
         .img-box{
-            flex-basis:calc(50% - 20px);
-            min-width:400px;
             background-color: $canary;
-            margin:10px;
+            @include wrap($margin:10px, $min-width:400px, $max-width:800px);
             .box-1{
+                // @include detach($right:25px, $bottom:25px);
                 position:relative;
                 right:25px;
                 bottom:25px;
             }
             .box-2{
+                // @include detach($left:25px, $bottom:25px);
                 position:relative;
                 left:25px;
                 bottom:25px;
             }
         }
         .text-box{
-            flex-basis:calc(50% - 20px);
-            margin:10px;
+            @include wrap($margin:10px, $min-width:400px, $max-width:800px);
+            margin-bottom:20px;
             &.box-2{
                 align-items: flex-end;
             }
             h4 {
-                margin: 20px 0;
+                @include heading-styler;
             }
             p {
-                margin: 20px 0;
-                display: inline-block;
-                max-width: 800px;
-                text-align: center;
+                @include p-styler($min-width:400px, $max-width:800px);
             }
         }
     }
@@ -109,7 +102,7 @@ header{
             .text-box{
                 margin:15px;
                 h4{
-                    margin:10px;
+                    @include heading-styler;
                 }
             }
             .icon-box{
@@ -119,7 +112,6 @@ header{
     }
 }
 .banner{
-    width:100vw;
     padding:0;
     .wrapper{
         max-width:1500px;
@@ -145,7 +137,7 @@ header{
             flex-basis:60%;
             margin:0 0 0 20px;
             h3{
-                margin:0 0 20px 0;
+                @include heading-styler;
             }
 
         }

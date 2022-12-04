@@ -239,24 +239,8 @@ ul {
   list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Playfair Display";
-  font-weight: 700;
-  font-style: italic;
-}
-
-p {
-  font-family: "Roboto";
-  font-weight: 400;
-}
-
 h1 {
   font-size: 138px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 h2 {
@@ -267,14 +251,11 @@ h2 {
 h3 {
   font-size: 42px;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 h4 {
   font-size: 32px;
   letter-spacing: 1px;
-  text-transform: uppercase;
 }
 
 section {
@@ -413,6 +394,12 @@ header .wrapper nav .menu-nav .active {
   border-bottom: #4CEEA7 5px solid;
 }
 header .wrapper h1 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
   z-index: 20;
   margin: 10px;
 }
@@ -443,13 +430,20 @@ header .header-img img {
   align-items: center;
 }
 .about .wrapper h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
   margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 .about .wrapper p {
-  margin: 20px 0;
+  font-family: "Roboto";
+  font-weight: 400;
   display: inline-block;
   max-width: 800px;
-  text-align: center;
+  min-width: 100px;
+  margin: 20px 0;
 }
 
 .blog {
@@ -465,10 +459,11 @@ header .header-img img {
   flex-wrap: wrap;
 }
 .blog .wrapper .img-box {
+  background-color: #FDFA69;
+  margin: 0 10px;
   flex-basis: calc(50% - 20px);
   min-width: 400px;
-  background-color: #FDFA69;
-  margin: 10px;
+  max-width: 800px;
 }
 .blog .wrapper .img-box .box-1 {
   position: relative;
@@ -481,20 +476,30 @@ header .header-img img {
   bottom: 25px;
 }
 .blog .wrapper .text-box {
+  margin: 0 10px;
   flex-basis: calc(50% - 20px);
-  margin: 10px;
+  min-width: 400px;
+  max-width: 800px;
+  margin-bottom: 20px;
 }
 .blog .wrapper .text-box.box-2 {
   align-items: flex-end;
 }
 .blog .wrapper .text-box h4 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
   margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 .blog .wrapper .text-box p {
-  margin: 20px 0;
+  font-family: "Roboto";
+  font-weight: 400;
   display: inline-block;
   max-width: 800px;
-  text-align: center;
+  min-width: 400px;
+  margin: 20px 0;
 }
 
 .links {
@@ -511,14 +516,18 @@ header .header-img img {
   margin: 15px;
 }
 .links .wrapper .link-box .text-box h4 {
-  margin: 10px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 .links .wrapper .link-box .icon-box {
   align-self: flex-start;
 }
 
 .banner {
-  width: 100vw;
   padding: 0;
 }
 .banner .wrapper {
@@ -550,5 +559,10 @@ header .header-img img {
   margin: 0 0 0 20px;
 }
 .profile .wrapper .text-box h3 {
-  margin: 0 0 20px 0;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
 }/*# sourceMappingURL=styles.css.map */
