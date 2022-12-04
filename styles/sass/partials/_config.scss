@@ -1,13 +1,4 @@
 @use "variables" as *;
-@mixin style-1{
-    font-family: $font-1;
-    font-weight: map-get($font-weights, bold);
-    font-style:italic;
-}
-@mixin style-2{
-    font-family: $font-2;
-    font-weight:map-get($font-weights, reg)
-}
 
 h1, 
 h2,
@@ -30,6 +21,8 @@ h2{
 h3{
     font-size: 42px;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
 }
 h4{
     font-size: 32px;
@@ -41,6 +34,14 @@ h4{
     letter-spacing: 1px;
     line-height:32px;
     text-transform: uppercase;
+    background-color: $sea-green;
+    padding:0.5rem 1.5rem;
+    margin:1rem;
+    a{
+        display:inline-block;
+        width:100%;
+        text-align: center;
+    }
 }
 p{
     @include style-2();

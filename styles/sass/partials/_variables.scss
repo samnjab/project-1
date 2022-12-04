@@ -10,6 +10,16 @@ $ice:#EFFDF3;
 $font-1:'Playfair Display';
 $font-2:'Roboto';
 $font-weights:("thin":100,"reg":400, "medium":500,"bold":700);
+@mixin style-1 {
+    font-family: $font-1;
+    font-weight: map-get($font-weights, bold);
+    font-style: italic;
+}
+
+@mixin style-2 {
+    font-family: $font-2;
+    font-weight: map-get($font-weights, reg)
+}
 
 @mixin flex-center($direction:row, $main-axis:flex-start, $cross-axis:flex-start){
     display:flex;

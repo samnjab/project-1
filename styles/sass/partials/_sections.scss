@@ -36,3 +36,20 @@ header{
         z-index: 0;
     }
 }
+.about{
+    background-color:rgb($sea-green, 20%);
+    padding-top:25vh;
+    padding-bottom:80px;
+    .wrapper{
+        @include flex-center(column, center, center);
+        h3{
+            margin:20px 0;
+        }
+        p{
+            margin:20px 0;
+            display:inline-block;
+            max-width:800px;
+            text-align: center;
+        }
+    } 
+}
