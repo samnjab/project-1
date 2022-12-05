@@ -464,21 +464,26 @@ header .header-img img {
 }
 .blog .wrapper .img-box {
   background-color: #FDFA69;
-  margin: 0 10px;
-  flex-basis: calc(50% - 20px);
+  margin: 0 30px;
+  flex-basis: calc(50% - 60px);
   min-width: 400px;
   flex-grow: 1;
   max-width: 800px;
+  margin: 30px;
 }
 .blog .wrapper .img-box .box-1 {
   position: relative;
-  right: 25px;
-  bottom: 25px;
+  top: -30px;
+  right: 30px;
+  bottom: 30px;
+  left: -30px;
 }
 .blog .wrapper .img-box .box-2 {
   position: relative;
-  left: 25px;
-  bottom: 25px;
+  top: -30px;
+  right: -30px;
+  bottom: 30px;
+  left: 30px;
 }
 .blog .wrapper .text-box {
   margin: 0 10px;
@@ -506,6 +511,7 @@ header .header-img img {
   max-width: 800px;
   min-width: 400px;
   margin: 20px 0;
+  margin: 0 20px;
 }
 
 .links {
@@ -545,8 +551,6 @@ header .header-img img {
 
 .banner {
   padding: 0;
-  margin-bottom: 0;
-  background-color: pink;
 }
 .banner .wrapper {
   max-width: 1500px;
@@ -565,18 +569,20 @@ header .header-img img {
   flex-wrap: wrap;
 }
 .profile .wrapper .img-box {
-  margin: 0 20px;
-  flex-basis: calc(25% - 40px);
+  margin: 0 30px;
+  flex-basis: calc(25% - 60px);
   min-width: 200px;
   flex-grow: 1;
   max-width: 400px;
-  margin: 0 20px 0 20px;
+  margin: 0 30px 0 30px;
   background-color: #FDFA69;
 }
 .profile .wrapper .img-box img {
   position: relative;
-  bottom: 25px;
-  right: 25px;
+  top: -30px;
+  right: 30px;
+  bottom: 30px;
+  left: -30px;
 }
 .profile .wrapper .text-box {
   margin: 0 20px;

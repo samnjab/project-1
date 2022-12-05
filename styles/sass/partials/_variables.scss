@@ -61,12 +61,12 @@ $font-weights:("thin":100,"reg":400, "medium":500,"bold":700);
     flex-grow:1;
     max-width:$max-width;
 }
-@mixin detach($top: 0px, $right: 0px, $bottom: 0px, $left: 0px){
+@mixin detach($top, $right, $bottom, $left){
     position:relative;
     top:$top;
     right:$right;
     bottom:$bottom;
-    left:$left;
+    left:$left;  
 }
 @mixin transform($property){
     -webkit-transform: $property;
@@ -79,6 +79,7 @@ $font-weights:("thin":100,"reg":400, "medium":500,"bold":700);
         @content
     }
 }
+
 
 
 
