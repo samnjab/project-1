@@ -3,11 +3,15 @@
     header{
         .wrapper{
             nav{
+                align-self:flex-start;
+                width:fit-content;
                 .menu-nav{
-                    background-color: lime;
+                    // background-color: lime;
                     @include flex-center(column);
+                    flex-wrap:none;
                     li{
-                        background-color: pink;
+                        margin:10px 0;
+                        // background-color: pink;
                     }
                 }
             }  
