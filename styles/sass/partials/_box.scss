@@ -11,8 +11,8 @@
     width:100vw;
     height:100vh;
 }
-.text-box{
-    @include flex-center(column, space-between,flex-start);
+.title-box{
+    @include flex-center(row, flex-start,center);
 }
 .icon-box{
     background-color: $sea-green;
