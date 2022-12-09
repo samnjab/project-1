@@ -12,9 +12,18 @@ header{
             width:40%;
             .menu-nav{
                 @include flex-center(row, space-between,center);
+                flex-wrap:wrap;
                 width:100%;
+                li{
+                    @include wrap($margin:7px, $number-in-a-row:4, $min-width:fit-content, $max-width:fit-content);
+                }
+                // :last-child{
+                //     margin-left:0;
+                //     background-color: lime;
+                // }
                 .active{
                     border-bottom: $sea-green 5px solid;
+                    margin-left:0;
                 }
             }
         }
@@ -69,17 +78,27 @@ header{
             }
         }
         .text-box{
-            @include wrap($margin:10px, $min-width:400px, $max-width:800px);
+            @include wrap($margin:50px, $min-width:400px, $max-width:800px);
             margin-bottom:20px;
+            &.box-1{
+                .button{
+                    margin-left:0;
+                }
+            }
             &.box-2{
                 align-items: flex-end;
+                p{
+                    text-align:right;
+                }
+                .button {
+                    margin-right:0;
+                }
             }
             h4 {
                 @include heading-styler;
             }
             p {
                 @include p-styler($min-width:400px, $max-width:800px);
-                margin:0 20px;
             }
         }
     }
@@ -90,17 +109,27 @@ header{
         display:flex;
         flex-wrap:wrap;
         .link-box{
-            @include wrap($min-width:300px, $max-width:1000px);
-            flex-wrap:wrap;
-            .text-box{
-                @include wrap($margin:15px, $min-width:200px, $max-width:800px);
-                margin:15px;
+            @include wrap($margin:15px, $min-width:300px, $max-width:800px);
+            @include flex-center(column, flex-start, flex-start);
+            margin-left:0;
+            .title-box{
+                @include flex-center(row, flex-start, flex-center);
+                flex-wrap:wrap;
+                margin:15px 15px 15px 0;
+
                 h4{
                     @include heading-styler;
+                    margin:0;
+                }
+                .icon-box{
+                    flex-grow:0;
+                    flex-shrink:0;
                 }
             }
-            .icon-box{
-                align-self: flex-start;
+            p{
+                margin-left:4rem;
+                align-self: flex-end;
+                // width:calc(100% - 4rem);
             }
         }
     }

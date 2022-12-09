@@ -1,0 +1,21 @@
+@use "variables" as *;
+@media (max-width:800px){
+    header{
+        .wrapper{
+            nav{
+                align-self:flex-start;
+                width:fit-content;
+                .menu-nav{
+                    // background-color: lime;
+                    @include flex-center(column);
+                    flex-wrap:none;
+                    li{
+                        margin:10px 0;
+                        // background-color: pink;
+                    }
+                }
+            }  
+        }
+
+    }
+}

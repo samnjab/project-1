@@ -11,21 +11,21 @@
     width:100vw;
     height:100vh;
 }
-.text-box{
-    @include flex-center(column, space-between,flex-start);
+.title-box{
+    @include flex-center(row, flex-start,center);
 }
 .icon-box{
     background-color: $sea-green;
     padding:1.5em;
     @include flex-center(row, center, center);
     border-radius: 50%;
-    margin:2rem;
+    margin:0.5rem;
     i{
-        width:4rem;
-        height:4rem;
+        width:0.75rem;
+        height:0.75rem;
         @include flex-center(row, center, center);
     }
 }
 .link-box{
-    @include flex-center(row, space-between, baseline);
+    @include flex-center(column, flex-start, flex-start);
 }
