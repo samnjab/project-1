@@ -29,3 +29,6 @@
 .link-box{
     @include flex-center(column, flex-start, flex-start);
 }
+.text-box {
+    @include flex-center(column, space-between, flex-start);
+}

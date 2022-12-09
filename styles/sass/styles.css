@@ -369,6 +369,13 @@ p {
   align-items: flex-start;
 }
 
+.text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 header {
   width: 100vw;
   height: 100vh;
