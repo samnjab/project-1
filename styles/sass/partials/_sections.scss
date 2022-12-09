@@ -116,6 +116,7 @@ header{
                 @include flex-center(row, flex-start, flex-center);
                 flex-wrap:wrap;
                 margin:15px 15px 15px 0;
+
                 h4{
                     @include heading-styler;
                     margin:0;
