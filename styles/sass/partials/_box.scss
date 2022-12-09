@@ -27,5 +27,5 @@
     }
 }
 .link-box{
-    @include flex-center(row, space-between, baseline);
+    @include flex-center(column, flex-start, flex-start);
 }
