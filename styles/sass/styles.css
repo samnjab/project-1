@@ -351,11 +351,11 @@ p {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  margin: 2rem;
+  margin: 0.5rem;
 }
 .icon-box i {
-  width: 4rem;
-  height: 4rem;
+  width: 0.75rem;
+  height: 0.75rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -500,15 +500,24 @@ header .header-img img {
   left: 30px;
 }
 .blog .wrapper .text-box {
-  margin: 0 10px;
-  flex-basis: calc(50% - 20px);
+  margin: 0 50px;
+  flex-basis: calc(50% - 100px);
   min-width: 400px;
   flex-grow: 1;
   max-width: 800px;
   margin-bottom: 20px;
 }
+.blog .wrapper .text-box.box-1 .button {
+  margin-left: 0;
+}
 .blog .wrapper .text-box.box-2 {
   align-items: flex-end;
+}
+.blog .wrapper .text-box.box-2 p {
+  text-align: right;
+}
+.blog .wrapper .text-box.box-2 .button {
+  margin-right: 0;
 }
 .blog .wrapper .text-box h4 {
   font-family: "Playfair Display";
@@ -525,7 +534,6 @@ header .header-img img {
   max-width: 800px;
   min-width: 400px;
   margin: 20px 0;
-  margin: 0 20px;
 }
 
 .links {
@@ -661,5 +669,18 @@ footer .wrapper {
   }
   header .wrapper nav .menu-nav li {
     margin: 10px 0;
+  }
+}
+i.fa {
+  -webkit-animation: show 1s 1;
+  /* any other properties to override from FontAwesome's default .fa rule */
+}
+
+@-webkit-keyframes show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }/*# sourceMappingURL=styles.css.map */

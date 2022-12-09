@@ -19,10 +19,10 @@
     padding:1.5em;
     @include flex-center(row, center, center);
     border-radius: 50%;
-    margin:2rem;
+    margin:0.5rem;
     i{
-        width:4rem;
-        height:4rem;
+        width:0.75rem;
+        height:0.75rem;
         @include flex-center(row, center, center);
     }
 }

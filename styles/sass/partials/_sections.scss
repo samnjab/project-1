@@ -78,17 +78,27 @@ header{
             }
         }
         .text-box{
-            @include wrap($margin:10px, $min-width:400px, $max-width:800px);
+            @include wrap($margin:50px, $min-width:400px, $max-width:800px);
             margin-bottom:20px;
+            &.box-1{
+                .button{
+                    margin-left:0;
+                }
+            }
             &.box-2{
                 align-items: flex-end;
+                p{
+                    text-align:right;
+                }
+                .button {
+                    margin-right:0;
+                }
             }
             h4 {
                 @include heading-styler;
             }
             p {
                 @include p-styler($min-width:400px, $max-width:800px);
-                margin:0 20px;
             }
         }
     }
