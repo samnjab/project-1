@@ -228,6 +228,7 @@ html {
 
 html {
   color: #2C2C2C;
+  font-size: 125%;
 }
 
 a {
@@ -392,10 +393,23 @@ header .wrapper nav .menu-nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
+}
+header .wrapper nav .menu-nav li {
+  margin: 0 7px;
+  flex-basis: calc(25% - 14px);
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  flex-grow: 1;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 header .wrapper nav .menu-nav .active {
   border-bottom: #4CEEA7 5px solid;
+  margin-left: 0;
 }
 header .wrapper h1 {
   font-family: "Playfair Display";
@@ -629,4 +643,17 @@ footer .wrapper {
   padding: 15px 0;
   font-family: "Roboto";
   font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  header .wrapper nav .menu-nav {
+    background-color: lime;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  header .wrapper nav .menu-nav li {
+    background-color: pink;
+  }
 }/*# sourceMappingURL=styles.css.map */

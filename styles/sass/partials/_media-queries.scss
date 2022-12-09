@@ -1,0 +1,17 @@
+@use "variables" as *;
+@media (max-width:800px){
+    header{
+        .wrapper{
+            nav{
+                .menu-nav{
+                    background-color: lime;
+                    @include flex-center(column);
+                    li{
+                        background-color: pink;
+                    }
+                }
+            }  
+        }
+
+    }
+}
