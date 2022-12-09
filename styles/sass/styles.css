@@ -228,6 +228,7 @@ html {
 
 html {
   color: #2C2C2C;
+  font-size: 125%;
 }
 
 a {
@@ -240,21 +241,21 @@ ul {
 }
 
 h1 {
-  font-size: 138px;
+  font-size: calc(2.3rem + 7vw);
 }
 
 h2 {
-  font-size: 80px;
+  font-size: calc(1.3333333333rem + 7vw);
   line-height: 92px;
 }
 
 h3 {
-  font-size: 42px;
+  font-size: calc(1.05rem + 1vw);
   letter-spacing: 1px;
 }
 
 h4 {
-  font-size: 32px;
+  font-size: calc(1.6rem + 0vw);
   letter-spacing: 1px;
 }
 
@@ -524,7 +525,7 @@ header .header-img img {
 .links .wrapper .link-box {
   margin: 0 0px;
   flex-basis: calc(50% - 0px);
-  min-width: 400px;
+  min-width: 300px;
   flex-grow: 1;
   max-width: 1000px;
   flex-wrap: wrap;
@@ -532,7 +533,7 @@ header .header-img img {
 .links .wrapper .link-box .text-box {
   margin: 0 15px;
   flex-basis: calc(50% - 30px);
-  min-width: 300px;
+  min-width: 200px;
   flex-grow: 1;
   max-width: 800px;
   margin: 15px;
