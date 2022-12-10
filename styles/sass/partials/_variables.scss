@@ -29,7 +29,7 @@ $font-weights:("thin":100,"reg":400, "medium":500,"bold":700);
 @mixin fix-header($url){
     width:100vw;
     height:100vh;
-    background-image: url(../../../assets/header-image.jpg);
+    background-image: url($url);
     background-size:cover;
 }
 @mixin responsive-border($px-size, $px-weight, $vw-weight){

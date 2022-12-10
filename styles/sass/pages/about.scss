@@ -1,0 +1,39 @@
+@use "../partials/setup";
+@use "../partials/variables" as *;
+@use "../partials/resets";
+@use "../partials/config";
+@use "../partials/wrapper";
+@use "../partials/box";
+
+header {
+    // background-image: url("../../../assets/blog-header.jpg");
+    @include fix-header("../../../assets/blog-header.jpg");
+    position: relative;
+    .wrapper {
+        height: 100vh;
+        @include flex-center(column, space-between, center);
+        padding: 20px 0px;
+        nav {
+            align-self: flex-end;
+            width: 40%;
+
+            .menu-nav {
+                @include flex-center(row, space-between, center);
+                flex-wrap: wrap;
+                width: 100%;
+                li {
+                    @include wrap($margin:7px, $number-in-a-row:4, $min-width:fit-content, $max-width:fit-content);
+                }
+                .active {
+                    border-bottom: $sea-green 5px solid;
+                    margin-left: 0;
+                }
+            }
+        }
+        h1 {
+            @include heading-styler;
+            z-index: 20;
+            margin: 10px;
+        }
+    }
+}

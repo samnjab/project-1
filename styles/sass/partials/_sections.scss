@@ -1,7 +1,8 @@
 @use "variables" as *;
 
 header{
-    @include fix-header("../../../assets/header-image.jpg");
+    // @include fix-header("../../../assets/header-image.jpg");
+    background-image: url("../../../assets/header-image.jpg");
     position:relative;
     .wrapper{
         height:100vh;
