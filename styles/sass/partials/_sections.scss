@@ -68,7 +68,7 @@ header{
         flex-wrap: wrap;
         .img-box{
             background-color: $canary;
-            @include wrap($margin:30px, $min-width:400px, $max-width:800px);
+            @include wrap($margin:30px, $min-width:290px, $max-width:800px);
             margin:30px;
             .box-1{
                 @include detach(-30px, 30px, 30px, -30px);
@@ -78,7 +78,7 @@ header{
             }
         }
         .text-box{
-            @include wrap($margin:50px, $min-width:400px, $max-width:800px);
+            @include wrap($margin:50px, $min-width:290px, $max-width:800px);
             margin-bottom:20px;
             &.box-1{
                 .button{
@@ -98,7 +98,7 @@ header{
                 @include heading-styler;
             }
             p {
-                @include p-styler($min-width:400px, $max-width:800px);
+                @include p-styler($min-width:300px, $max-width:800px);
             }
         }
     }
@@ -109,7 +109,7 @@ header{
         display:flex;
         flex-wrap:wrap;
         .link-box{
-            @include wrap($margin:15px, $min-width:300px, $max-width:800px);
+            @include wrap($margin:15px, $min-width:320px, $max-width:800px);
             @include flex-center(column, flex-start, flex-start);
             margin-left:0;
             .title-box{
