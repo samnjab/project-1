@@ -698,6 +698,9 @@ footer .wrapper {
   header .wrapper nav .menu-nav li {
     margin: 10px 0;
   }
+  header .wrapper h1 {
+    margin-bottom: 0;
+  }
   header .header-img {
     right: calc(50% - max(40%, 300px) / 2);
     border-left: none;
