@@ -16,6 +16,11 @@
                 }
             }  
         }
+        .header-img{
+            right:calc(50% - max(40%, 300px)/2);
+            border-left:none;
+            opacity:0.8;
+        }
 
     }
 }

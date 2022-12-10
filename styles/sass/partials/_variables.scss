@@ -32,6 +32,9 @@ $font-weights:("thin":100,"reg":400, "medium":500,"bold":700);
     background-image: url(../../../assets/header-image.jpg);
     background-size:cover;
 }
+@mixin responsive-border($px-size, $px-weight, $vw-weight){
+    border: calc($px-size * $px-weight + $vw-weight) $canary solid;
+}
 @mixin z-layer($z-index){
     position:relative;
     z-index:$z-index;
@@ -70,6 +73,9 @@ $font-weights:("thin":100,"reg":400, "medium":500,"bold":700);
     right:$right;
     bottom:$bottom;
     left:$left;  
+}
+@mixin responsive-height($px-height, $px-weight, $vw-weight){
+    height:calc($px-height * $px-weight - $vw-weight);
 }
 @mixin transform($property){
     -webkit-transform: $property;

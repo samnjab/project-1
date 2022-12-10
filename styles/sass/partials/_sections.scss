@@ -34,11 +34,15 @@ header{
         }
     }
     .header-img{
-        width:40%;
-        border:50px $canary solid;
+        width:max(40%, 300px);
+        img{
+            height:100%;
+        }
+        // border:50px $canary solid;
+        @include responsive-border(0px, 1, 4vw);
         border-right:0px;
         position:absolute;
-        bottom:-25vh;
+        bottom: calc(-1 * (max(300px, 40%)/2));
         right:0;
         z-index:10;
         img{
@@ -136,9 +140,16 @@ header{
 }
 .banner{
     padding:0;
+    background-color: $ice;
     .wrapper{
-        @include bleed(1500px);
-        
+        @include bleed(1500px); 
+        @include responsive-height(500px, 1, 5vw);
+        .img-box{
+            height:100%;
+            img{
+                height:100%;
+            }
+        }
     }
 }
 .profile{
@@ -148,7 +159,7 @@ header{
         @include flex-center(row, center, center);
         flex-wrap:wrap;
         .img-box{
-            @include wrap($margin:30px, $number-in-a-row:4, $min-width:200px, $max-width:400px);
+            @include wrap($margin:30px, $number-in-a-row:4, $min-width:200px, $max-width:300px);
             margin:0 30px 0 30px;
             background-color: $canary;
             img{
@@ -172,7 +183,7 @@ header{
         flex-wrap: wrap;
         .img-box{
             @include wrap($margin:10px, $number-in-a-row:3, $min-width:200px, $max-width:400px);
-            margin:0 10px;
+            margin:5px 10px;
         }
     }
 }

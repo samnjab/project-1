@@ -429,13 +429,16 @@ header .wrapper h1 {
   margin: 10px;
 }
 header .header-img {
-  width: 40%;
-  border: 50px #FDFA69 solid;
+  width: max(40%, 300px);
+  border: calc(0px + 4vw) #FDFA69 solid;
   border-right: 0px;
   position: absolute;
-  bottom: -25vh;
+  bottom: calc(-1 * max(300px, 40%) / 2);
   right: 0;
   z-index: 10;
+}
+header .header-img img {
+  height: 100%;
 }
 header .header-img img {
   position: relative;
@@ -590,10 +593,18 @@ header .header-img img {
 
 .banner {
   padding: 0;
+  background-color: #EFFDF3;
 }
 .banner .wrapper {
   max-width: 1500px;
   width: 100%;
+  height: calc(500px - 5vw);
+}
+.banner .wrapper .img-box {
+  height: 100%;
+}
+.banner .wrapper .img-box img {
+  height: 100%;
 }
 
 .profile {
@@ -612,7 +623,7 @@ header .header-img img {
   flex-basis: calc(25% - 60px);
   min-width: 200px;
   flex-grow: 1;
-  max-width: 400px;
+  max-width: 300px;
   margin: 0 30px 0 30px;
   background-color: #FDFA69;
 }
@@ -656,7 +667,7 @@ header .header-img img {
   min-width: 200px;
   flex-grow: 1;
   max-width: 400px;
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
 footer {
@@ -686,6 +697,11 @@ footer .wrapper {
   }
   header .wrapper nav .menu-nav li {
     margin: 10px 0;
+  }
+  header .header-img {
+    right: calc(50% - max(40%, 300px) / 2);
+    border-left: none;
+    opacity: 0.8;
   }
 }
 i.fa {
