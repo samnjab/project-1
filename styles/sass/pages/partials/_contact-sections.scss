@@ -1,4 +1,4 @@
-@use "../../partials/variables"as *;
+@use "../../partials/variables" as *;
 
 header {
     // background-image: url("../../../../assets/contact-header.jpg");
@@ -38,29 +38,32 @@ header {
         }
     }
 }
-.touch{
+.touch {
     background-color: $ice;
-    .wrapper{
-        @include flex-center();
-        flex-wrap:wrap;
-        .info{
-            @include wrap($margin:20px, $number-in-a-row:4, $min-width:fit-content, $max-width:fit-content);
-            p{
-                span{
-                    display:block;
+
+    .wrapper {
+        @include flex-center(row, space-between, flex-start);
+        flex-wrap: wrap;
+        .info {
+            @include wrap($margin:10px, $number-in-a-row:4, $min-width:auto, $max-width:fit-content);
+            margin:0 20px 60px 0;
+            p {
+                span {
+                    display: block;
                 }
             }
+
         }
         .form-box{
             background-color: $canary;
-            @include wrap($margin:40px, $number-in-a-row:calc(4/3), $min-width:200px, $max-width:800px);
-            margin:0 30px 0 50px;
-            // @include detach(0, 0, 0, 0);
+            @include wrap($margin:0px, $number-in-a-row:calc(4/3), $min-width:auto, $max-width:800px);
+            margin: 0px 0px 0 0px 0px;
+            @include detach(-300px, 0, 300px, 0);
             @media (max-width:1110px) {
                 position: static;
+            }
             form {
                 background-color: $white;
-                // @include wrap($margin:0px, $number-in-a-row:calc(4/3), $min-width:300px, $max-width:800px);
                 @include detach(-30px, -30px, 30px, 30px);
                 fieldset {
                     border: none;
@@ -69,6 +72,7 @@ header {
             
                     input {
                         @include style-2();
+                        background-color: $white;
                         border-bottom: $sea-green 2px solid;
                         padding: 1rem;
                         margin: 5px;
@@ -81,28 +85,39 @@ header {
                             line-height: 32px;
                         }
                     }
-                }
-        
-                textarea {
-                    @include style-2();
-                    border: $sea-green 2px solid;
-                    padding: 1rem;
-                    margin: 5px;
-                    @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:790px);
-                    margin: 10px 5px 10px 5px;
-        
-                    &::placeholder {
+            
+                    textarea {
                         @include style-2();
-                        font-size: 20px;
-                        line-height: 32px;
+                        background-color: $white;
+                        border: $sea-green 2px solid;
+                        padding: 1rem;
+                        margin: 5px;
+                        @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:790px);
+                        margin: 10px 5px 10px 5px;
+            
+                        &::placeholder {
+                            @include style-2();
+                            font-size: 20px;
+                            line-height: 32px;
+                        }
                     }
-                }
-        
-                button {
-                    @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:790px);
-                    margin: 10px 5px 10px 5px;
+            
+                    button {
+                        @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:790px);
+                        margin: 10px 5px 10px 5px;
+                    }
                 }
             }
         }
+    }
+}
+footer {
+    background-color: $black;
+
+    .wrapper {
+        color: $white;
+        text-align: center;
+        padding: 15px 0;
+        @include style-2;
     }
 }

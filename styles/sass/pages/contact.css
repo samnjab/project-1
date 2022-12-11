@@ -295,7 +295,8 @@ section {
   text-align: center;
 }
 
-p {
+p,
+.paragraph {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
@@ -448,37 +449,41 @@ header .wrapper h1 {
 .touch .wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
 }
 .touch .wrapper .info {
-  margin: 0 0px;
-  flex-basis: calc(25% - 0px);
-  min-width: -webkit-fit-content;
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+  margin: 0 10px;
+  flex-basis: calc(25% - 20px);
+  min-width: auto;
   flex-grow: 1;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  margin: 0 20px 60px 0;
 }
 .touch .wrapper .info p span {
   display: block;
 }
 .touch .wrapper .form-box {
   background-color: #FDFA69;
-  margin: 0 40px;
-  flex-basis: calc(75% - 80px);
-  min-width: 300px;
+  margin: 0 0px;
+  flex-basis: calc(75% - 0px);
+  min-width: auto;
   flex-grow: 1;
   max-width: 800px;
-  margin: 0 30px 0 50px;
+  margin: 0px 0px 0 0px 0px;
   position: relative;
   top: -300px;
   right: 0;
   bottom: 300px;
   left: 0;
+}
+@media (max-width: 1110px) {
+  .touch .wrapper .form-box {
+    position: static;
+  }
 }
 .touch .wrapper .form-box form {
   background-color: #FAFAFA;
@@ -499,6 +504,7 @@ header .wrapper h1 {
 .touch .wrapper .form-box form fieldset input {
   font-family: "Roboto";
   font-weight: 400;
+  background-color: #FAFAFA;
   border-bottom: #4CEEA7 2px solid;
   padding: 1rem;
   margin: 5px;
@@ -527,9 +533,10 @@ header .wrapper h1 {
   font-size: 20px;
   line-height: 32px;
 }
-.touch .wrapper .form-box form textarea {
+.touch .wrapper .form-box form fieldset textarea {
   font-family: "Roboto";
   font-weight: 400;
+  background-color: #FAFAFA;
   border: #4CEEA7 2px solid;
   padding: 1rem;
   margin: 5px;
@@ -540,31 +547,42 @@ header .wrapper h1 {
   max-width: 790px;
   margin: 10px 5px 10px 5px;
 }
-.touch .wrapper .form-box form textarea::-moz-placeholder {
+.touch .wrapper .form-box form fieldset textarea::-moz-placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
-.touch .wrapper .form-box form textarea:-ms-input-placeholder {
+.touch .wrapper .form-box form fieldset textarea:-ms-input-placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
-.touch .wrapper .form-box form textarea::placeholder {
+.touch .wrapper .form-box form fieldset textarea::placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
-.touch .wrapper .form-box form button {
+.touch .wrapper .form-box form fieldset button {
   margin: 0 5px;
   flex-basis: calc(100% - 10px);
   min-width: 10px;
   flex-grow: 1;
   max-width: 790px;
   margin: 10px 5px 10px 5px;
+}
+
+footer {
+  background-color: #2C2C2C;
+}
+footer .wrapper {
+  color: #FAFAFA;
+  text-align: center;
+  padding: 15px 0;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 
 @media (max-width: 1000px) {
