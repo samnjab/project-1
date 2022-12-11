@@ -381,10 +381,11 @@ header {
   height: 100vh;
   background-image: url("../../../assets/blog-header.jpg");
   background-size: cover;
+  height: 80vh;
   position: relative;
 }
 header .wrapper {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -425,8 +426,9 @@ header .wrapper h1 {
   margin: 20px 0;
   text-align: center;
   text-transform: uppercase;
+  font-size: calc(1rem + 5vw);
   z-index: 20;
-  margin: 10px;
+  margin-bottom: 25vh;
 }
 
 .blog {
@@ -492,14 +494,12 @@ header .wrapper h1 {
   flex-grow: 1;
   max-width: 800px;
   border: 5px #FDFA69 solid;
-}
-.blog .wrapper .right-box h3 {
-  font-family: "Playfair Display";
-  font-weight: 700;
-  font-style: italic;
-  margin: 20px 0;
-  text-align: center;
-  text-transform: uppercase;
+  border-right: none;
+  position: relative;
+  top: -300px;
+  right: 0;
+  bottom: 300px;
+  left: 0;
 }
 .blog .wrapper .right-box .img-box {
   background-color: #FDFA69;
@@ -510,4 +510,20 @@ header .wrapper h1 {
   right: -30px;
   bottom: 30px;
   left: 30px;
+}
+.blog .wrapper .right-box .text-box h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem 0 0 1rem;
+}
+.blog .wrapper .right-box .text-box p {
+  margin: 1rem;
+}
+.blog .wrapper .right-box .text-box p span {
+  display: block;
+  margin-bottom: 2rem;
 }/*# sourceMappingURL=about.css.map */
