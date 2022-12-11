@@ -43,7 +43,7 @@ header {
     background-color: $ice;
     .wrapper {
         @include bleed(1500px);
-        @include flex-center();
+        @include flex-center(row, space-between, flex-start);
         flex-wrap: wrap;
 
         .left-box {
@@ -93,8 +93,11 @@ header {
 
         .right-box {
             @include wrap($margin:40px, $number-in-a-row:1.5, $min-width:300px, $max-width:800px);
+            margin:0 30px 0 50px;
             @include detach(-300px, 0, 300px, 0);
-
+            @media (max-width:1110px){
+                position:static;
+            }
             .post {
                 border: 5px $canary solid;
                 border-right: none;
@@ -135,13 +138,15 @@ header {
                 .link-box {
                     flex-direction: row;
                     flex-wrap: wrap;
+                    max-width:700px;
                     .img-box {
                         @include wrap($margin:20px, $number-in-a-row:3, $min-width:100px, $max-width:100px);
-                        margin:20px 20px;
+                        margin:20px 20px 20px 0;
                     }
 
                     p {
-                        @include wrap($margin:20px, $number-in-a-row:1.5, $min-width:200px, $max-width:500px);
+                        @include wrap($margin:20px, $number-in-a-row:1.5, $min-width:300px, $max-width:auto);
+                        margin:20px 20px 20px 0;
                     }
 
                     &.profile-1 {
@@ -165,7 +170,7 @@ header {
                         background-color: $ice;
                         padding: 1rem;
                         margin: 5px;
-                        @include wrap($margin:5px, $number-in-a-row:2, $min-width:10px, $max-width:auto);
+                        @include wrap($margin:5px, $number-in-a-row:2, $min-width:10px, $max-width:calc(800px/2 - 10px));
                         margin: 10px 5px 10px 5px;
 
                         &::placeholder {
@@ -173,7 +178,6 @@ header {
                             font-size: 20px;
                             line-height: 32px;
                         }
-
                     }
 
                     textarea {
@@ -182,7 +186,7 @@ header {
                         background-color: $ice;
                         padding: 1rem;
                         margin: 5px;
-                        @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:auto);
+                        @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:790px);
                         margin: 10px 5px 10px 5px;
 
                         &::placeholder {
@@ -193,7 +197,7 @@ header {
                     }
 
                     button {
-                        @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:auto);
+                        @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:790px);
                         margin: 10px 5px 10px 5px;
                     }
                 }
