@@ -427,4 +427,33 @@ header .wrapper h1 {
   text-transform: uppercase;
   z-index: 20;
   margin: 10px;
+}
+
+.blog {
+  background-color: #EFFDF3;
+}
+.blog .wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.blog .wrapper .left-box {
+  position: relative;
+}
+.blog .wrapper .left-box .text-box {
+  background-color: #FAFAFA;
+}
+.blog .wrapper .right-box {
+  border: 10px #FDFA69 solid;
+}
+.blog .wrapper .right-box .img-box {
+  background-color: #FDFA69;
+}
+.blog .wrapper .right-box .img-box img {
+  position: relative;
+  top: -30px;
+  right: -30px;
+  bottom: 30px;
+  left: 30px;
 }/*# sourceMappingURL=about.css.map */
