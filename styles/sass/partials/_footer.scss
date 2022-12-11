@@ -1,0 +1,10 @@
+@use "./variables" as *;
+footer {
+    background-color: $black;
+    .wrapper {
+        color: $white;
+        text-align: center;
+        padding: 15px 0;
+        @include style-2;
+    }
+}

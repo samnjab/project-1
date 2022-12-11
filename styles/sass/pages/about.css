@@ -605,7 +605,6 @@ header {
   font-family: "Roboto";
   font-weight: 400;
   border-bottom: #4CEEA7 2px solid;
-  background-color: #EFFDF3;
   padding: 1rem;
   margin: 5px;
   margin: 0 5px;
@@ -637,7 +636,6 @@ header {
   font-family: "Roboto";
   font-weight: 400;
   border: #4CEEA7 2px solid;
-  background-color: #EFFDF3;
   padding: 1rem;
   margin: 5px;
   margin: 0 5px;
@@ -672,6 +670,20 @@ header {
   flex-grow: 1;
   max-width: 790px;
   margin: 10px 5px 10px 5px;
+}
+.blog .wrapper .right-box form {
+  background-color: #EFFDF3;
+  position: relative;
+  top: 0px;
+  right: -30px;
+  bottom: 0px;
+  left: 30px;
+}
+.blog .wrapper .right-box form input {
+  background-color: #EFFDF3;
+}
+.blog .wrapper .right-box form textarea {
+  background-color: #EFFDF3;
 }
 
 footer {
