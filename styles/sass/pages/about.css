@@ -442,18 +442,28 @@ header .wrapper h1 {
   flex-wrap: wrap;
 }
 .blog .wrapper .left-box {
+  background-color: #FAFAFA;
   margin: 0 40px;
   flex-basis: calc(33.3333333333% - 80px);
   min-width: 290px;
   flex-grow: 1;
   max-width: 800px;
   position: relative;
+  margin-right: 0;
+  margin-left: 80px;
 }
 .blog .wrapper .left-box .text-box {
   background-color: #FAFAFA;
 }
+.blog .wrapper .left-box .img-box {
+  width: calc(100% + 40px);
+}
 .blog .wrapper .left-box .img-box img {
-  width: 200%;
+  position: relative;
+  top: 0;
+  right: 80px;
+  bottom: 0;
+  left: -80px;
 }
 .blog .wrapper .right-box {
   margin: 0 40px;
