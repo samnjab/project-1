@@ -81,27 +81,56 @@ header {
         }
         .right-box{
             @include wrap($margin:40px, $number-in-a-row:1.5, $min-width:300px, $max-width:800px);
-            border:5px $canary solid;
-            border-right:none;
             @include detach(-300px, 0, 300px, 0);
-            .img-box{
-                background-color: $canary;
-                img{
-                    @include detach(-30px, -30px, 30px, 30px);
-                }
-            }
-            .text-box{
-                h3{
-                    @include heading-styler;
-                    margin:1rem 0 0 1rem;
-                } 
-                p{
-                    margin:1rem;
-                    span{
-                        display:block;
-                        margin-bottom:2rem;
+            .post{
+                border:5px $canary solid;
+                border-right:none;
+                .img-box{
+                    background-color: $canary;
+                    img{
+                        @include detach(-30px, -30px, 30px, 30px);
                     }
                 }
+                .text-box{
+                    h3{
+                        @include heading-styler;
+                        margin:1rem 0 0 1rem;
+                    } 
+                    p{
+                        margin:1rem;
+                        span{
+                            display:block;
+                            margin-bottom:2rem;
+                        }
+                    }
+                }
+            }
+            .comment{
+                h4 {
+                    @include heading-styler();
+                    text-align: left;
+                    margin: 20px 0 20px 0;
+                }
+                .link-box{
+                    flex-direction: row;
+                    flex-wrap:wrap;
+                    .img-box{
+                        @include wrap($margin:0px, $number-in-a-row:3, $min-width:100px, $max-width:100px);
+                    }
+                    p{
+                        @include wrap($margin:40px, $number-in-a-row:1.5, $min-width:100px, $max-width:auto);
+                    }
+                    &.profile-1{
+                        margin:4rem 0;
+                    }
+                    &.profile-2{
+                        margin:4rem 0;
+                    }
+
+                }
+
+
+
             }
         }
     }

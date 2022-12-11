@@ -493,25 +493,27 @@ header .wrapper h1 {
   min-width: 300px;
   flex-grow: 1;
   max-width: 800px;
-  border: 5px #FDFA69 solid;
-  border-right: none;
   position: relative;
   top: -300px;
   right: 0;
   bottom: 300px;
   left: 0;
 }
-.blog .wrapper .right-box .img-box {
+.blog .wrapper .right-box .post {
+  border: 5px #FDFA69 solid;
+  border-right: none;
+}
+.blog .wrapper .right-box .post .img-box {
   background-color: #FDFA69;
 }
-.blog .wrapper .right-box .img-box img {
+.blog .wrapper .right-box .post .img-box img {
   position: relative;
   top: -30px;
   right: -30px;
   bottom: 30px;
   left: 30px;
 }
-.blog .wrapper .right-box .text-box h3 {
+.blog .wrapper .right-box .post .text-box h3 {
   font-family: "Playfair Display";
   font-weight: 700;
   font-style: italic;
@@ -520,10 +522,44 @@ header .wrapper h1 {
   text-transform: uppercase;
   margin: 1rem 0 0 1rem;
 }
-.blog .wrapper .right-box .text-box p {
+.blog .wrapper .right-box .post .text-box p {
   margin: 1rem;
 }
-.blog .wrapper .right-box .text-box p span {
+.blog .wrapper .right-box .post .text-box p span {
   display: block;
   margin-bottom: 2rem;
+}
+.blog .wrapper .right-box .comment h4 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 20px 0 20px 0;
+}
+.blog .wrapper .right-box .comment .link-box {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.blog .wrapper .right-box .comment .link-box .img-box {
+  margin: 0 0px;
+  flex-basis: calc(33.3333333333% - 0px);
+  min-width: 100px;
+  flex-grow: 1;
+  max-width: 100px;
+}
+.blog .wrapper .right-box .comment .link-box p {
+  margin: 0 40px;
+  flex-basis: calc(66.6666666667% - 80px);
+  min-width: 100px;
+  flex-grow: 1;
+  max-width: auto;
+}
+.blog .wrapper .right-box .comment .link-box.profile-1 {
+  margin: 4rem 0;
+}
+.blog .wrapper .right-box .comment .link-box.profile-2 {
+  margin: 4rem 0;
 }/*# sourceMappingURL=about.css.map */
