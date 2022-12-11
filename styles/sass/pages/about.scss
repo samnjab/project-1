@@ -41,18 +41,25 @@ header {
 .blog{
     background-color: $ice;
     .wrapper{
+        @include bleed(1500px);
         @include flex-center();
+        flex-wrap:wrap;
         .left-box{
+            @include wrap($margin:40px, $number-in-a-row:3, $min-width:290px, $max-width:800px);
             position:relative;
             .text-box{
                 background-color: $white;   
             }
             .img-box{
+                img{
+                    width:200%;
+                }
                 // position:absolute;
                 // top:50px;
             }
         }
         .right-box{
+            @include wrap($margin:40px, $number-in-a-row:1.5, $min-width:300px, $max-width:800px);
             border:10px $canary solid;
             .img-box{
                 background-color: $canary;
