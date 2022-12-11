@@ -51,7 +51,22 @@ header {
             margin-right:0;
             margin-left:80px;
             .text-box{
-                background-color: $white;   
+                background-color: $white;
+                h4 {
+                    @include heading-styler();
+                    text-align: left;
+                    margin:20px 0 20px 0;
+                }
+                .text-1{
+                    margin:2rem 1rem 1rem 1rem;
+                    span{
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+                }
+                .text-2{
+                    margin:1rem 1rem 2rem 1rem;
+                }
             }
             .img-box{
                 width:calc(100% + 40px);
@@ -64,7 +79,10 @@ header {
         }
         .right-box{
             @include wrap($margin:40px, $number-in-a-row:1.5, $min-width:300px, $max-width:800px);
-            border:10px $canary solid;
+            border:5px $canary solid;
+            h3{
+                @include heading-styler;
+            }   
             .img-box{
                 background-color: $canary;
                 img{

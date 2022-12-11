@@ -455,6 +455,26 @@ header .wrapper h1 {
 .blog .wrapper .left-box .text-box {
   background-color: #FAFAFA;
 }
+.blog .wrapper .left-box .text-box h4 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  text-align: left;
+  margin: 20px 0 20px 0;
+}
+.blog .wrapper .left-box .text-box .text-1 {
+  margin: 2rem 1rem 1rem 1rem;
+}
+.blog .wrapper .left-box .text-box .text-1 span {
+  font-weight: bold;
+  font-style: italic;
+}
+.blog .wrapper .left-box .text-box .text-2 {
+  margin: 1rem 1rem 2rem 1rem;
+}
 .blog .wrapper .left-box .img-box {
   width: calc(100% + 40px);
 }
@@ -471,7 +491,15 @@ header .wrapper h1 {
   min-width: 300px;
   flex-grow: 1;
   max-width: 800px;
-  border: 10px #FDFA69 solid;
+  border: 5px #FDFA69 solid;
+}
+.blog .wrapper .right-box h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-style: italic;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
 }
 .blog .wrapper .right-box .img-box {
   background-color: #FDFA69;
