@@ -26,9 +26,9 @@ $font-weights:("thin":100,"reg":400, "medium":500,"bold":700);
     justify-content: $main-axis;
     align-items: $cross-axis;
 }
-@mixin fix-header($url){
+@mixin fix-header($url, $height){
     width:100vw;
-    height:100vh;
+    height:$height;
     background-image: url($url);
     background-size:cover;
 }

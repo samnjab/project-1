@@ -389,7 +389,10 @@ p,
 }
 
 header {
+  width: 100vw;
+  height: 100vh;
   background-image: url("../../../assets/header-image.jpg");
+  background-size: cover;
   position: relative;
 }
 header .wrapper {

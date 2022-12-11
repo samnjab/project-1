@@ -389,15 +389,10 @@ p,
 }
 
 header {
-  width: 100vw;
-  height: 100vh;
-  background-image: url("../../../../assets/blog-header.jpg");
-  background-size: cover;
-  height: 80vh;
   position: relative;
 }
 header .wrapper {
-  height: 80vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -443,6 +438,13 @@ header .wrapper h1 {
   font-size: calc(1.3333333333rem + 4vw);
   z-index: 20;
   margin-bottom: 35vh;
+}
+
+header {
+  width: 100vw;
+  height: 80vh;
+  background-image: url("../../../../assets/blog-header.jpg");
+  background-size: cover;
 }
 
 .blog {
