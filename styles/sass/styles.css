@@ -240,6 +240,15 @@ ul {
   list-style: none;
 }
 
+input,
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
 h1 {
   font-size: calc(2.3rem + 7vw);
 }
@@ -698,12 +707,16 @@ footer .wrapper {
     margin: 10px 0;
   }
   header .wrapper h1 {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
+    align-self: flex-end;
   }
   header .header-img {
     right: calc(50% - max(40%, 300px) / 2);
     border-left: none;
     opacity: 0.8;
+  }
+  .blog .wrapper .right-box {
+    position: static;
   }
 }
 i.fa {

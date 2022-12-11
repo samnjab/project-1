@@ -240,6 +240,15 @@ ul {
   list-style: none;
 }
 
+input,
+textarea,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+}
+
 h1 {
   font-size: calc(2.3rem + 7vw);
 }
@@ -452,8 +461,7 @@ header .wrapper h1 {
   flex-grow: 1;
   max-width: 800px;
   position: relative;
-  margin-right: 0;
-  margin-left: 80px;
+  margin: 0 0 80px 80px;
 }
 .blog .wrapper .left-box .text-box {
   background-color: #FAFAFA;
@@ -471,12 +479,16 @@ header .wrapper h1 {
 .blog .wrapper .left-box .text-box .text-1 {
   margin: 2rem 1rem 1rem 1rem;
 }
-.blog .wrapper .left-box .text-box .text-1 span {
+.blog .wrapper .left-box .text-box .text-1 a {
   font-weight: bold;
   font-style: italic;
 }
 .blog .wrapper .left-box .text-box .text-2 {
   margin: 1rem 1rem 2rem 1rem;
+}
+.blog .wrapper .left-box .text-box .text-2 li {
+  list-style: circle;
+  margin: 10px;
 }
 .blog .wrapper .left-box .img-box {
   width: calc(100% + 40px);
@@ -547,18 +559,19 @@ header .wrapper h1 {
   flex-wrap: wrap;
 }
 .blog .wrapper .right-box .comment .link-box .img-box {
-  margin: 0 0px;
-  flex-basis: calc(33.3333333333% - 0px);
+  margin: 0 20px;
+  flex-basis: calc(33.3333333333% - 40px);
   min-width: 100px;
   flex-grow: 1;
   max-width: 100px;
+  margin: 20px 20px;
 }
 .blog .wrapper .right-box .comment .link-box p {
-  margin: 0 40px;
-  flex-basis: calc(66.6666666667% - 80px);
+  margin: 0 20px;
+  flex-basis: calc(66.6666666667% - 40px);
   min-width: 200px;
   flex-grow: 1;
-  max-width: auto;
+  max-width: 500px;
 }
 .blog .wrapper .right-box .comment .link-box.profile-1 {
   margin: 4rem 0;
@@ -573,14 +586,6 @@ header .wrapper h1 {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-}
-.blog .wrapper .right-box form fieldset input,
-.blog .wrapper .right-box form fieldset textarea,
-.blog .wrapper .right-box form fieldset button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
 }
 .blog .wrapper .right-box form fieldset input {
   font-family: "Roboto";
@@ -684,11 +689,15 @@ footer .wrapper {
     margin: 10px 0;
   }
   header .wrapper h1 {
-    margin-bottom: 0;
+    margin-bottom: 2rem;
+    align-self: flex-end;
   }
   header .header-img {
     right: calc(50% - max(40%, 300px) / 2);
     border-left: none;
     opacity: 0.8;
+  }
+  .blog .wrapper .right-box {
+    position: static;
   }
 }/*# sourceMappingURL=about.css.map */
