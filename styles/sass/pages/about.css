@@ -427,7 +427,7 @@ header .wrapper h1 {
   margin: 20px 0;
   text-align: center;
   text-transform: uppercase;
-  font-size: calc(1rem + 4vw);
+  font-size: calc(1.3333333333rem + 4vw);
   z-index: 20;
   margin-bottom: 35vh;
 }
@@ -556,7 +556,7 @@ header .wrapper h1 {
 .blog .wrapper .right-box .comment .link-box p {
   margin: 0 40px;
   flex-basis: calc(66.6666666667% - 80px);
-  min-width: 100px;
+  min-width: 200px;
   flex-grow: 1;
   max-width: auto;
 }
@@ -583,6 +583,8 @@ header .wrapper h1 {
   border: none;
 }
 .blog .wrapper .right-box form fieldset input {
+  font-family: "Roboto";
+  font-weight: 400;
   border-bottom: #4CEEA7 2px solid;
   background-color: #EFFDF3;
   padding: 1rem;
@@ -613,6 +615,8 @@ header .wrapper h1 {
   line-height: 32px;
 }
 .blog .wrapper .right-box form fieldset textarea {
+  font-family: "Roboto";
+  font-weight: 400;
   border: #4CEEA7 2px solid;
   background-color: #EFFDF3;
   padding: 1rem;
@@ -660,4 +664,31 @@ footer .wrapper {
   padding: 15px 0;
   font-family: "Roboto";
   font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+  header .wrapper nav {
+    align-self: flex-start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header .wrapper nav .menu-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: none;
+  }
+  header .wrapper nav .menu-nav li {
+    margin: 10px 0;
+  }
+  header .wrapper h1 {
+    margin-bottom: 0;
+  }
+  header .header-img {
+    right: calc(50% - max(40%, 300px) / 2);
+    border-left: none;
+    opacity: 0.8;
+  }
 }/*# sourceMappingURL=about.css.map */

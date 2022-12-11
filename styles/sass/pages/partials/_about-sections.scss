@@ -1,0 +1,223 @@
+@use "../../partials/variables" as *;
+header {
+    // background-image: url("../../../assets/blog-header.jpg");
+    @include fix-header("../../../assets/blog-header.jpg");
+    height: 80vh;
+    position: relative;
+
+    .wrapper {
+        height: 80vh;
+        @include flex-center(column, space-between, center);
+        padding: 20px 0px;
+
+        nav {
+            align-self: flex-end;
+            width: 40%;
+
+            .menu-nav {
+                @include flex-center(row, space-between, center);
+                flex-wrap: wrap;
+                width: 100%;
+
+                li {
+                    @include wrap($margin:7px, $number-in-a-row:4, $min-width:fit-content, $max-width:fit-content);
+                }
+
+                .active {
+                    border-bottom: $sea-green 5px solid;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        h1 {
+            @include heading-styler;
+            @include responsive-size(4rem, 1/3, 4vw);
+            z-index: 20;
+            margin-bottom: 35vh;
+        }
+    }
+}
+
+.blog {
+    background-color: $ice;
+
+    .wrapper {
+        @include bleed(1500px);
+        @include flex-center();
+        flex-wrap: wrap;
+
+        .left-box {
+            background-color: $white;
+            @include wrap($margin:40px, $number-in-a-row:3, $min-width:290px, $max-width:800px);
+            position: relative;
+            margin-right: 0;
+            margin-left: 80px;
+
+            .text-box {
+                background-color: $white;
+
+                h4 {
+                    @include heading-styler();
+                    text-align: left;
+                    margin: 20px 0 20px 0;
+                }
+
+                .text-1 {
+                    margin: 2rem 1rem 1rem 1rem;
+
+                    span {
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+                }
+
+                .text-2 {
+                    margin: 1rem 1rem 2rem 1rem;
+                }
+            }
+
+            .img-box {
+                width: calc(100% + 40px);
+
+                img {
+                    @include detach(0, 80px, 0, -80px);
+                }
+
+                // position:absolute;
+                // top:50px;
+            }
+        }
+
+        .right-box {
+            @include wrap($margin:40px, $number-in-a-row:1.5, $min-width:300px, $max-width:800px);
+            @include detach(-300px, 0, 300px, 0);
+
+            .post {
+                border: 5px $canary solid;
+                border-right: none;
+
+                .img-box {
+                    background-color: $canary;
+
+                    img {
+                        @include detach(-30px, -30px, 30px, 30px);
+                    }
+                }
+
+                .text-box {
+                    padding: 2rem;
+
+                    h3 {
+                        @include heading-styler;
+                    }
+
+                    p {
+                        span {
+                            display: block;
+                            margin-bottom: 2rem;
+                        }
+                    }
+                }
+            }
+
+            .comment {
+                padding: 2rem;
+
+                h4 {
+                    @include heading-styler();
+                    text-align: left;
+                    margin: 20px 0 20px 0;
+                }
+
+                .link-box {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    .img-box {
+                        @include wrap($margin:0px, $number-in-a-row:3, $min-width:100px, $max-width:100px);
+                    }
+
+                    p {
+                        @include wrap($margin:40px, $number-in-a-row:1.5, $min-width:200px, $max-width:auto);
+                    }
+
+                    &.profile-1 {
+                        margin: 4rem 0;
+                    }
+
+                    &.profile-2 {
+                        margin: 4rem 0 2rem 0;
+                    }
+                }
+
+            }
+
+            form {
+                fieldset {
+                    border: none;
+                    @include flex-center();
+                    flex-wrap: wrap;
+
+                    input,
+                    textarea,
+                    button {
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        border: none;
+                    }
+
+                    input {
+                        @include style-2();
+                        border-bottom: $sea-green 2px solid;
+                        background-color: $ice;
+                        padding: 1rem;
+                        margin: 5px;
+                        @include wrap($margin:5px, $number-in-a-row:2, $min-width:10px, $max-width:auto);
+                        margin: 10px 5px 10px 5px;
+
+                        &::placeholder {
+                            @include style-2();
+                            font-size: 20px;
+                            line-height: 32px;
+                        }
+
+                    }
+
+                    textarea {
+                        @include style-2();
+                        border: $sea-green 2px solid;
+                        background-color: $ice;
+                        padding: 1rem;
+                        margin: 5px;
+                        @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:auto);
+                        margin: 10px 5px 10px 5px;
+
+                        &::placeholder {
+                            @include style-2();
+                            font-size: 20px;
+                            line-height: 32px;
+                        }
+                    }
+
+                    button {
+                        @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:auto);
+                        margin: 10px 5px 10px 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    background-color: $black;
+
+    .wrapper {
+        color: $white;
+        text-align: center;
+        padding: 15px 0;
+        @include style-2;
+    }
+}

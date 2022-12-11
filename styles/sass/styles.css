@@ -680,7 +680,7 @@ footer .wrapper {
   font-weight: 400;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   header .wrapper nav {
     align-self: flex-start;
     width: -webkit-fit-content;
