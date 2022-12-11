@@ -456,26 +456,39 @@ header .wrapper h1 {
   flex-wrap: wrap;
 }
 .touch .wrapper .info {
-  margin: 0 10px;
-  flex-basis: calc(25% - 20px);
+  margin: 0 40px;
+  flex-basis: calc(25% - 80px);
   min-width: auto;
   flex-grow: 1;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
-  margin: 0 20px 60px 0;
+  margin: 0 80px 60px 0;
+}
+.touch .wrapper .info .socials {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.touch .wrapper .info .socials a {
+  margin: 0.5rem;
+}
+.touch .wrapper .info .socials a:first-child {
+  margin-left: 0;
 }
 .touch .wrapper .info p span {
   display: block;
 }
 .touch .wrapper .form-box {
   background-color: #FDFA69;
-  margin: 0 30px;
-  flex-basis: calc(66.6666666667% - 60px);
-  min-width: auto;
+  margin: 0 20px;
+  flex-basis: calc(66.6666666667% - 40px);
+  min-width: 10px;
   flex-grow: 1;
-  max-width: 800px;
-  margin: 0px 0px 0 0px 60px;
+  max-width: min(800px, 90%);
+  margin: 0px 40px 0 0px 0px;
   position: relative;
   top: -300px;
   right: 0;

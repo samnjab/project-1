@@ -47,8 +47,18 @@ header {
         @include flex-center(row, space-between, flex-start);
         flex-wrap: wrap;
         .info {
-            @include wrap($margin:10px, $number-in-a-row:4, $min-width:auto, $max-width:fit-content);
-            margin:0 20px 60px 0;
+            @include wrap($margin:40px, $number-in-a-row:4, $min-width:auto, $max-width:fit-content);
+            margin:0 80px 60px 0;
+            .socials{
+                margin-bottom:0.5rem;
+                @include flex-center();
+                a{
+                    margin:0.5rem;
+                    &:first-child{
+                        margin-left:0;
+                    }
+                }
+            }
             p {
                 span {
                     display: block;
@@ -58,8 +68,8 @@ header {
         }
         .form-box{
             background-color: $canary;
-            @include wrap($margin:30px, $number-in-a-row:1.5, $min-width:auto, $max-width:800px);
-            margin: 0px 0px 0 0px 60px;
+            @include wrap($margin:20px, $number-in-a-row:1.5, $min-width:10px, $max-width:min(800px, 90%));
+            margin: 0px 40px 0 0px 0px;
             @include detach(-300px, 0, 300px, 0);
             @media (max-width:1110px) {
                 position: static;
