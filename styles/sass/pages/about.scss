@@ -126,12 +126,65 @@ header {
                     &.profile-2{
                         margin:4rem 0;
                     }
-
                 }
 
-
-
+            }
+            form{
+                fieldset{
+                    border:none;
+                    @include flex-center();
+                    flex-wrap:wrap;
+                    input,
+                    textarea,
+                    button{
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                        border:none;
+                    }
+                    input{
+                        border-bottom:$sea-green 2px solid;
+                        background-color: $ice;
+                        padding:1rem;
+                        margin:5px;
+                        @include wrap($margin:5px, $number-in-a-row:2, $min-width:10px, $max-width:auto);
+                        margin:10px 5px 10px 5px;
+                        &::placeholder{
+                            @include style-2();
+                            font-size: 20px;
+                            line-height: 32px;
+                        }
+                        
+                    }
+                    textarea{
+                        border:$sea-green 2px solid;
+                        background-color: $ice;
+                        padding:1rem;
+                        margin:5px;
+                        @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:auto);
+                        margin:10px 5px 10px 5px;
+                        &::placeholder {
+                            @include style-2();
+                            font-size: 20px;
+                            line-height: 32px;
+                        }
+                    }
+                    button{
+                        @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:auto);
+                        margin:10px 5px 10px 5px;
+                    }
+                }
             }
         }
+    }
+}
+footer {
+    background-color: $black;
+
+    .wrapper {
+        color: $white;
+        text-align: center;
+        padding: 15px 0;
+        @include style-2;
     }
 }
