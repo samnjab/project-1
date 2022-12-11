@@ -297,11 +297,12 @@ p {
   font-family: "Playfair Display";
   font-weight: 700;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1rem;
   letter-spacing: 1px;
   text-align: center;
   line-height: 29px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .email {

@@ -297,11 +297,12 @@ p {
   font-family: "Playfair Display";
   font-weight: 700;
   font-style: italic;
-  font-size: 20px;
+  font-size: 1rem;
   letter-spacing: 1px;
   text-align: center;
   line-height: 29px;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .email {
@@ -513,6 +514,9 @@ header .wrapper h1 {
   bottom: 30px;
   left: 30px;
 }
+.blog .wrapper .right-box .post .text-box {
+  padding: 2rem;
+}
 .blog .wrapper .right-box .post .text-box h3 {
   font-family: "Playfair Display";
   font-weight: 700;
@@ -520,14 +524,13 @@ header .wrapper h1 {
   margin: 20px 0;
   text-align: center;
   text-transform: uppercase;
-  margin: 1rem 0 0 1rem;
-}
-.blog .wrapper .right-box .post .text-box p {
-  margin: 1rem;
 }
 .blog .wrapper .right-box .post .text-box p span {
   display: block;
   margin-bottom: 2rem;
+}
+.blog .wrapper .right-box .comment {
+  padding: 2rem;
 }
 .blog .wrapper .right-box .comment h4 {
   font-family: "Playfair Display";
@@ -561,7 +564,7 @@ header .wrapper h1 {
   margin: 4rem 0;
 }
 .blog .wrapper .right-box .comment .link-box.profile-2 {
-  margin: 4rem 0;
+  margin: 4rem 0 2rem 0;
 }
 .blog .wrapper .right-box form fieldset {
   border: none;
