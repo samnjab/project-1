@@ -20,7 +20,9 @@ header{
                 }
                 .active{
                     border-bottom: $sea-green 5px solid;
-                    margin-left:0;
+                }
+                .linked {
+                    border-bottom: rgb(255, 255, 255, 0) 5px solid;
                 }
             }
         }

@@ -429,7 +429,9 @@ header .wrapper nav .menu-nav li {
 }
 header .wrapper nav .menu-nav .active {
   border-bottom: #4CEEA7 5px solid;
-  margin-left: 0;
+}
+header .wrapper nav .menu-nav .linked {
+  border-bottom: rgba(255, 255, 255, 0) 5px solid;
 }
 header .wrapper h1 {
   font-family: "Playfair Display";
@@ -468,12 +470,12 @@ header .wrapper h1 {
 }
 .touch .wrapper .form-box {
   background-color: #FDFA69;
-  margin: 0 0px;
-  flex-basis: calc(75% - 0px);
+  margin: 0 30px;
+  flex-basis: calc(66.6666666667% - 60px);
   min-width: auto;
   flex-grow: 1;
   max-width: 800px;
-  margin: 0px 0px 0 0px 0px;
+  margin: 0px 0px 0 0px 60px;
   position: relative;
   top: -300px;
   right: 0;

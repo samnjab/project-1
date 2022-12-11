@@ -429,7 +429,9 @@ header .wrapper nav .menu-nav li {
 }
 header .wrapper nav .menu-nav .active {
   border-bottom: #4CEEA7 5px solid;
-  margin-left: 0;
+}
+header .wrapper nav .menu-nav .linked {
+  border-bottom: rgba(255, 255, 255, 0) 5px solid;
 }
 header .wrapper h1 {
   font-family: "Playfair Display";
