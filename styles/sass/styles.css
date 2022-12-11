@@ -422,8 +422,9 @@ header .wrapper h1 {
   margin: 20px 0;
   text-align: center;
   text-transform: uppercase;
+  font-size: calc(2.3rem + 5vw);
   z-index: 20;
-  margin: 10px;
+  margin: 0 0 0 75px;
 }
 header .header-img {
   width: max(40%, 300px);

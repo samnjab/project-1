@@ -426,9 +426,9 @@ header .wrapper h1 {
   margin: 20px 0;
   text-align: center;
   text-transform: uppercase;
-  font-size: calc(1rem + 5vw);
+  font-size: calc(1rem + 4vw);
   z-index: 20;
-  margin-bottom: 25vh;
+  margin-bottom: 35vh;
 }
 
 .blog {

@@ -33,9 +33,9 @@ header {
         }
         h1 {
             @include heading-styler;
-            @include responsive-size(4rem, 1/4, 5vw);
+            @include responsive-size(4rem, 1/4, 4vw);
             z-index: 20;
-            margin-bottom:25vh;
+            margin-bottom:35vh;
         }
     }
 }
@@ -102,13 +102,7 @@ header {
                         margin-bottom:2rem;
                     }
                 }
-
-
             }
-
         }
-        
-
     }
-
 }
