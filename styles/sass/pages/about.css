@@ -466,6 +466,7 @@ header {
   min-width: 290px;
   flex-grow: 1;
   max-width: 800px;
+  flex-grow: 0;
   position: relative;
   margin: 0 0 80px 80px;
 }

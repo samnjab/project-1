@@ -3,17 +3,16 @@
 header {
     @include fix-header("../../../../assets/blog-header.jpg", 80vh);
 }
-
 .blog {
     background-color: $ice;
     .wrapper {
         @include bleed(1500px);
         @include flex-center(row, space-between, flex-start);
         flex-wrap: wrap;
-
         .left-box {
             background-color: $white;
             @include wrap($margin:40px, $number-in-a-row:3, $min-width:290px, $max-width:800px);
+            flex-grow:0;
             position: relative;
             margin:0 0 80px 80px;
 
