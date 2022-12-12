@@ -106,6 +106,36 @@
             }
         }
     }
+    .touch {
+        .wrapper {
+            .form-box {
+                max-width: 100%;
+                form {
+                    @include detach(0px, 0px, 0px, 0px);
+                    margin: auto;
+                    max-width: 100%;
+                    padding: 1rem 0;
+                    fieldset {
+                        padding: 0;
+                        input {
+                            max-width: calc(100%);
+                            margin: 10px 0;
+                        }
+                        textarea {
+                            max-width: 100%;
+                            margin: 10px 0;
+                            border-left: none;
+                            border-right: none;
+                        }
+                        button {
+                            max-width: 100%;
+                            margin: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 @media(max-width:$mobile){
     header{
