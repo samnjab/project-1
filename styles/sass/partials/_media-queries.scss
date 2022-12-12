@@ -64,6 +64,9 @@
                 align-self: stretch;
             }
         }
+        .header-img{
+            display:none;
+        }
     }
     .about-blog{
         .wrapper{
@@ -154,7 +157,7 @@
                 &.home-h1{
                     position:absolute;
                     top:calc(90vh - 8rem);
-                    right:calc(40vw - 2rem);
+                    right:calc(40vw);
                     transform: rotate(-90deg); 
                 }
             }
@@ -276,4 +279,15 @@
             }
         }
     }
+}
+@media (max-width:400px){
+    .home-header{
+        .wrapper{
+            .home-h1{
+                right: calc(40vw - 2rem);
+            }
+        }
+    }
+
+
 }

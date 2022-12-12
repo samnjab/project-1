@@ -750,6 +750,9 @@ header {
     background-color: rgba(250, 250, 250, 0.5);
     align-self: stretch;
   }
+  header .header-img {
+    display: none;
+  }
   .about-blog .wrapper {
     margin: 0 auto;
     max-width: 100%;
@@ -834,7 +837,7 @@ header {
   header .wrapper h1.home-h1 {
     position: absolute;
     top: calc(90vh - 8rem);
-    right: calc(40vw - 2rem);
+    right: 40vw;
     transform: rotate(-90deg);
   }
   header .header-img {
@@ -944,5 +947,10 @@ header {
   .touch .wrapper .form-box form fieldset button {
     max-width: 100%;
     margin: 10px 0;
+  }
+}
+@media (max-width: 400px) {
+  .home-header .wrapper .home-h1 {
+    right: calc(40vw - 2rem);
   }
 }/*# sourceMappingURL=about.css.map */
