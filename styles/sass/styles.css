@@ -704,6 +704,9 @@ header .header-img img {
   header.home-header {
     background-position: bottom left;
   }
+  header.contact-header {
+    background-position: -300px 0;
+  }
   header .wrapper nav {
     align-self: flex-start;
     width: -webkit-fit-content;
@@ -787,6 +790,9 @@ header .header-img img {
     background-position: 0px -60px;
     background-repeat: none;
     background-color: #FAFAFA;
+  }
+  header.contact-header {
+    background-position: -350px 50px;
   }
   header .wrapper {
     position: relative;

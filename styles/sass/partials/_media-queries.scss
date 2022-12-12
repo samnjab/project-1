@@ -5,6 +5,9 @@
         &.home-header{
             background-position: bottom left;
         }
+        &.contact-header{
+            background-position:-300px 0;
+        }
         .wrapper{
             nav{
                 align-self:flex-start;
@@ -101,6 +104,9 @@
             background-position: 0px -60px;
             background-repeat: none;
             background-color: $white;
+        }
+        &.contact-header {
+            background-position: -350px 50px;
         }
         .wrapper{
             position:relative;
