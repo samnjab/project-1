@@ -1,6 +1,7 @@
 @use "variables" as *;
-@media (max-width:1000px){
+@media (max-width:$sm-scr){
     header{
+        background-position: bottom left;
         .wrapper{
             nav{
                 align-self:flex-start;
@@ -16,9 +17,7 @@
             }
             h1{
                 margin-bottom:2rem;
-                // margin:0 0 20px 100px;
-                align-self: flex-end;
-                
+                align-self: flex-end;  
             }  
         }
         .header-img{
@@ -35,4 +34,51 @@
             }
         }
     }
+}
+@media (max-width:$tablet){
+    header{
+        background-position:bottom left;
+    }
+
+}
+@media(max-width:$mobile){
+    header{
+        background-position: 0px -60px;
+        background-repeat: none;
+        background-color: $white;
+        .wrapper{
+            position:relative;
+            h1{
+                position:absolute;
+                top:calc(90vh - 8rem);
+                right:calc(40vw - 2rem);
+                transform: rotate(-90deg);
+                // bottom:100px;
+                // right:75px;
+            }
+        }
+        .header-img{
+            display:none;
+            bottom:120px;
+        }
+    }
+    .blog{
+        .wrapper{
+            .img-box{
+                min-width: calc($min-dim - 60px);
+            }
+        }
+    }
+    .links{
+        .wrapper{
+            .link-box{
+                min-width:calc($min-dim - 30px);
+                p{
+                    margin-left:0px;
+                }
+
+            }
+        }
+    }
+
 }

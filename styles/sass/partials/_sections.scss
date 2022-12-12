@@ -3,6 +3,7 @@
 header{
     @include fix-header("../../../assets/header-image.jpg", 100vh);
     // background-image: url("../../../assets/header-image.jpg");
+    background-position: -20px -30px;
     position:relative;
     .wrapper{
         height:100vh;
@@ -38,7 +39,6 @@ header{
         img{
             height:100%;
         }
-        // border:50px $canary solid;
         @include responsive-border(0px, 1, 4vw);
         border-right:0px;
         position:absolute;

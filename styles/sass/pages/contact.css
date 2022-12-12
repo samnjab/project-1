@@ -412,8 +412,8 @@ header .wrapper nav .menu-nav {
   width: 100%;
 }
 header .wrapper nav .menu-nav li {
-  margin: 0 15px;
-  flex-basis: calc(25% - 30px);
+  margin: 0 7px;
+  flex-basis: calc(25% - 14px);
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
@@ -606,7 +606,10 @@ footer .wrapper {
   font-weight: 400;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
+  header {
+    background-position: bottom left;
+  }
   header .wrapper nav {
     align-self: flex-start;
     width: -webkit-fit-content;
@@ -634,5 +637,39 @@ footer .wrapper {
   }
   .blog .wrapper .right-box {
     position: static;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    background-position: bottom left;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    background-position: 0px -60px;
+    background-repeat: none;
+    background-color: #FAFAFA;
+  }
+  header .wrapper {
+    position: relative;
+  }
+  header .wrapper h1 {
+    position: absolute;
+    top: calc(90vh - 8rem);
+    right: calc(40vw - 2rem);
+    transform: rotate(-90deg);
+  }
+  header .header-img {
+    display: none;
+    bottom: 120px;
+  }
+  .blog .wrapper .img-box {
+    min-width: 260px;
+  }
+  .links .wrapper .link-box {
+    min-width: 290px;
+  }
+  .links .wrapper .link-box p {
+    margin-left: 0px;
   }
 }/*# sourceMappingURL=contact.css.map */
