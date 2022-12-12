@@ -582,7 +582,7 @@ header {
 .about-blog .wrapper .right-box .comment .link-box p {
   margin: 0 20px;
   flex-basis: calc(66.6666666667% - 40px);
-  min-width: 300px;
+  min-width: 250px;
   flex-grow: 1;
   max-width: auto;
   margin: 20px 20px 20px 0;
@@ -693,6 +693,9 @@ footer .wrapper {
 }
 
 @media (max-width: 1024px) {
+  header {
+    height: 100vh;
+  }
   header.home-header {
     background-position: bottom left;
   }
@@ -726,8 +729,15 @@ footer .wrapper {
   }
 }
 @media (max-width: 768px) {
+  header {
+    height: 100vh;
+  }
   header.home-header {
     background-position: bottom left;
+  }
+  .about-blog .wrapper {
+    margin: 0 auto;
+    max-width: 100%;
   }
   .about-blog .wrapper .left-box {
     max-width: calc(100vw - 120px);
@@ -737,6 +747,28 @@ footer .wrapper {
   }
   .about-blog .wrapper .right-box .comment {
     padding-left: 0;
+  }
+  .about-blog .wrapper .right-box form {
+    margin: auto;
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+  .about-blog .wrapper .right-box form fieldset {
+    padding: 0;
+  }
+  .about-blog .wrapper .right-box form fieldset input {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+  .about-blog .wrapper .right-box form fieldset textarea {
+    max-width: 100%;
+    margin: 10px 0;
+    border-left: none;
+    border-right: none;
+  }
+  .about-blog .wrapper .right-box form fieldset button {
+    max-width: 100%;
+    margin: 10px 0;
   }
 }
 @media (max-width: 480px) {
@@ -773,12 +805,12 @@ footer .wrapper {
   .about-blog .wrapper {
     margin: 0 auto;
     max-width: 100%;
-    background-color: pink;
   }
   .about-blog .wrapper .left-box {
     min-width: 290px;
     max-width: 100%;
     margin: auto;
+    padding: 0.25rem;
   }
   .about-blog .wrapper .left-box .img-box {
     width: 100%;
@@ -794,6 +826,7 @@ footer .wrapper {
     min-width: 290px;
     max-width: 100%;
     margin: auto;
+    padding: 0.25rem;
   }
   .about-blog .wrapper .right-box .post .img-box img {
     position: relative;
@@ -801,6 +834,9 @@ footer .wrapper {
     right: 0px;
     bottom: 30px;
     left: 0px;
+  }
+  .about-blog .wrapper .right-box .post .text-box {
+    padding: 0.5rem;
   }
   .about-blog .wrapper .right-box .comment {
     padding: 1.5rem;

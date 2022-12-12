@@ -1,6 +1,7 @@
 @use "variables" as *;
 @media (max-width:$sm-scr){
     header{
+        height:100vh;
         &.home-header{
             background-position: bottom left;
         }
@@ -38,12 +39,15 @@
 }
 @media (max-width:$tablet){
     header{
+        height:100vh;
         &.home-header{
             background-position:bottom left;
         }
     }
     .about-blog{
         .wrapper{
+            margin: 0 auto;
+            max-width:100%;
             .left-box{
                 max-width:calc(100vw - 120px);
             }
@@ -52,10 +56,35 @@
                 .comment{
                     padding-left:0;
                 }
+                form {
+                    margin: auto;
+                    max-width: 100%;
+                    padding: 1rem 0;
+                
+                    fieldset {
+                        padding: 0;
+                
+                        input {
+                            max-width: calc(100%);
+                            margin: 10px 0;
+                        }
+                
+                        textarea {
+                            max-width: 100%;
+                            margin: 10px 0;
+                            border-left: none;
+                            border-right: none;
+                        }
+                
+                        button {
+                            max-width: 100%;
+                            margin: 10px 0;
+                        }
+                    }
+                }
             }
         }
     }
-
 }
 @media(max-width:$mobile){
     header{
@@ -105,12 +134,11 @@
         .wrapper{
             margin: 0 auto;
             max-width:100%;
-            // @include bleed(320px);
-            background-color: pink;
             .left-box{
                 min-width:290px;
                 max-width:100%;
                 margin:auto;
+                padding:0.25rem;
                 .img-box{
                     width:100%;
                     img{
@@ -122,11 +150,15 @@
                 min-width:290px;
                 max-width:100%;
                 margin:auto;
+                padding:0.25rem;
                 .post{
                     .img-box{
                         img{
                             @include detach(-30px, 0px, 30px, 0px);
                         }
+                    }
+                    .text-box{
+                        padding:0.5rem;
                     }
                 }
                 .comment{
