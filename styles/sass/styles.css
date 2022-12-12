@@ -698,7 +698,7 @@ footer .wrapper {
 }
 
 @media (max-width: 1024px) {
-  header {
+  header.home-header {
     background-position: bottom left;
   }
   header .wrapper nav {
@@ -726,17 +726,26 @@ footer .wrapper {
     border-left: none;
     opacity: 0.8;
   }
-  .blog .wrapper .right-box {
+  .about-blog .wrapper .right-box {
     position: static;
   }
 }
 @media (max-width: 768px) {
-  header {
+  header.home-header {
     background-position: bottom left;
+  }
+  .about-blog .wrapper .left-box {
+    max-width: calc(100vw - 120px);
+  }
+  .about-blog .wrapper .right-box {
+    max-width: calc(100vw - 100px);
+  }
+  .about-blog .wrapper .right-box .comment {
+    padding-left: 0;
   }
 }
 @media (max-width: 480px) {
-  header {
+  header.home-header {
     background-position: 0px -60px;
     background-repeat: none;
     background-color: #FAFAFA;
@@ -744,7 +753,7 @@ footer .wrapper {
   header .wrapper {
     position: relative;
   }
-  header .wrapper h1 {
+  header .wrapper h1.home-h1 {
     position: absolute;
     top: calc(90vh - 8rem);
     right: calc(40vw - 2rem);

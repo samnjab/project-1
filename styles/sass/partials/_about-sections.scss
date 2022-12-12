@@ -3,7 +3,7 @@
 header {
     @include fix-header("../../../../assets/blog-header.jpg", 80vh);
 }
-.blog {
+.about-blog {
     background-color: $ice;
     .wrapper {
         @include bleed(1500px);
@@ -11,8 +11,8 @@ header {
         flex-wrap: wrap;
         .left-box {
             background-color: $white;
-            @include wrap($margin:40px, $number-in-a-row:3, $min-width:290px, $max-width:800px);
-            flex-grow:0;
+            @include wrap($margin:40px, $number-in-a-row:3, $min-width:290px, $max-width:650px);
+            // flex-grow:0;
             position: relative;
             margin:0 0 80px 80px;
 
@@ -50,7 +50,7 @@ header {
         }
 
         .right-box {
-            @include wrap($margin:40px, $number-in-a-row:1.5, $min-width:300px, $max-width:800px);
+            @include wrap($margin:40px, $number-in-a-row:1.5, $min-width:300px, $max-width:650px);
             margin:0 30px 0 50px;
             @include detach(-300px, 0, 300px, 0);
             @media (max-width:1110px){
@@ -119,8 +119,6 @@ header {
             @import "./form";
             form {
                 background-color: $ice;
-                @include detach(0px, -30px, 0px, 30px);
-            
                 input {
                     background-color: $ice;
                 }

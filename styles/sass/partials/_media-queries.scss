@@ -1,13 +1,14 @@
 @use "variables" as *;
 @media (max-width:$sm-scr){
     header{
-        background-position: bottom left;
+        &.home-header{
+            background-position: bottom left;
+        }
         .wrapper{
             nav{
                 align-self:flex-start;
                 width:fit-content;
                 .menu-nav{
-                    // background-color: lime;
                     @include flex-center(column);
                     flex-wrap:none;
                     li{
@@ -27,8 +28,11 @@
         }
 
     }
-    .blog{
+    .about-blog{
         .wrapper{
+            .left-box{
+    
+            }
             .right-box{
                 position:static;
             }
@@ -37,24 +41,43 @@
 }
 @media (max-width:$tablet){
     header{
-        background-position:bottom left;
+        &.home-header{
+            background-position:bottom left;
+        }
+    }
+    .about-blog{
+        .wrapper{
+            
+            .left-box{
+                max-width:calc(100vw - 120px);
+            }
+            .right-box{
+                max-width:calc(100vw - 100px);
+                .comment{
+                    padding-left:0;
+                }
+            }
+        }
     }
 
 }
 @media(max-width:$mobile){
     header{
-        background-position: 0px -60px;
-        background-repeat: none;
-        background-color: $white;
+        &.home-header{
+            background-position: 0px -60px;
+            background-repeat: none;
+            background-color: $white;
+        }
         .wrapper{
             position:relative;
             h1{
-                position:absolute;
-                top:calc(90vh - 8rem);
-                right:calc(40vw - 2rem);
-                transform: rotate(-90deg);
-                // bottom:100px;
-                // right:75px;
+                &.home-h1{
+                    position:absolute;
+                    top:calc(90vh - 8rem);
+                    right:calc(40vw - 2rem);
+                    transform: rotate(-90deg); 
+
+                }
             }
         }
         .header-img{

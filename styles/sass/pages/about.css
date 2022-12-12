@@ -447,10 +447,10 @@ header {
   background-size: cover;
 }
 
-.blog {
+.about-blog {
   background-color: #EFFDF3;
 }
-.blog .wrapper {
+.about-blog .wrapper {
   max-width: 1500px;
   width: 100%;
   display: flex;
@@ -459,21 +459,20 @@ header {
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.blog .wrapper .left-box {
+.about-blog .wrapper .left-box {
   background-color: #FAFAFA;
   margin: 0 40px;
   flex-basis: calc(33.3333333333% - 80px);
   min-width: 290px;
   flex-grow: 1;
-  max-width: 800px;
-  flex-grow: 0;
+  max-width: 650px;
   position: relative;
   margin: 0 0 80px 80px;
 }
-.blog .wrapper .left-box .text-box {
+.about-blog .wrapper .left-box .text-box {
   background-color: #FAFAFA;
 }
-.blog .wrapper .left-box .text-box h4 {
+.about-blog .wrapper .left-box .text-box h4 {
   font-family: "Playfair Display";
   font-weight: 700;
   font-style: italic;
@@ -483,36 +482,36 @@ header {
   text-align: left;
   margin: 20px 0 20px 0;
 }
-.blog .wrapper .left-box .text-box .text-1 {
+.about-blog .wrapper .left-box .text-box .text-1 {
   margin: 2rem 1rem 1rem 1rem;
 }
-.blog .wrapper .left-box .text-box .text-1 a {
+.about-blog .wrapper .left-box .text-box .text-1 a {
   font-weight: bold;
   font-style: italic;
 }
-.blog .wrapper .left-box .text-box .text-2 {
+.about-blog .wrapper .left-box .text-box .text-2 {
   margin: 1rem 1rem 2rem 1rem;
 }
-.blog .wrapper .left-box .text-box .text-2 li {
+.about-blog .wrapper .left-box .text-box .text-2 li {
   list-style: circle;
   margin: 10px;
 }
-.blog .wrapper .left-box .img-box {
+.about-blog .wrapper .left-box .img-box {
   width: calc(100% + 40px);
 }
-.blog .wrapper .left-box .img-box img {
+.about-blog .wrapper .left-box .img-box img {
   position: relative;
   top: 0;
   right: 80px;
   bottom: 0;
   left: -80px;
 }
-.blog .wrapper .right-box {
+.about-blog .wrapper .right-box {
   margin: 0 40px;
   flex-basis: calc(66.6666666667% - 80px);
   min-width: 300px;
   flex-grow: 1;
-  max-width: 800px;
+  max-width: 650px;
   margin: 0 30px 0 50px;
   position: relative;
   top: -300px;
@@ -521,28 +520,28 @@ header {
   left: 0;
 }
 @media (max-width: 1110px) {
-  .blog .wrapper .right-box {
+  .about-blog .wrapper .right-box {
     position: static;
   }
 }
-.blog .wrapper .right-box .post {
+.about-blog .wrapper .right-box .post {
   border: 5px #FDFA69 solid;
   border-right: none;
 }
-.blog .wrapper .right-box .post .img-box {
+.about-blog .wrapper .right-box .post .img-box {
   background-color: #FDFA69;
 }
-.blog .wrapper .right-box .post .img-box img {
+.about-blog .wrapper .right-box .post .img-box img {
   position: relative;
   top: -30px;
   right: -30px;
   bottom: 30px;
   left: 30px;
 }
-.blog .wrapper .right-box .post .text-box {
+.about-blog .wrapper .right-box .post .text-box {
   padding: 2rem;
 }
-.blog .wrapper .right-box .post .text-box h3 {
+.about-blog .wrapper .right-box .post .text-box h3 {
   font-family: "Playfair Display";
   font-weight: 700;
   font-style: italic;
@@ -550,14 +549,14 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
-.blog .wrapper .right-box .post .text-box p span {
+.about-blog .wrapper .right-box .post .text-box p span {
   display: block;
   margin-bottom: 2rem;
 }
-.blog .wrapper .right-box .comment {
+.about-blog .wrapper .right-box .comment {
   padding: 2rem;
 }
-.blog .wrapper .right-box .comment h4 {
+.about-blog .wrapper .right-box .comment h4 {
   font-family: "Playfair Display";
   font-weight: 700;
   font-style: italic;
@@ -567,12 +566,12 @@ header {
   text-align: left;
   margin: 20px 0 20px 0;
 }
-.blog .wrapper .right-box .comment .link-box {
+.about-blog .wrapper .right-box .comment .link-box {
   flex-direction: row;
   flex-wrap: wrap;
   max-width: 700px;
 }
-.blog .wrapper .right-box .comment .link-box .img-box {
+.about-blog .wrapper .right-box .comment .link-box .img-box {
   margin: 0 20px;
   flex-basis: calc(33.3333333333% - 40px);
   min-width: 100px;
@@ -580,7 +579,7 @@ header {
   max-width: 100px;
   margin: 20px 20px 20px 0;
 }
-.blog .wrapper .right-box .comment .link-box p {
+.about-blog .wrapper .right-box .comment .link-box p {
   margin: 0 20px;
   flex-basis: calc(66.6666666667% - 40px);
   min-width: 300px;
@@ -588,13 +587,13 @@ header {
   max-width: auto;
   margin: 20px 20px 20px 0;
 }
-.blog .wrapper .right-box .comment .link-box.profile-1 {
+.about-blog .wrapper .right-box .comment .link-box.profile-1 {
   margin: 4rem 0;
 }
-.blog .wrapper .right-box .comment .link-box.profile-2 {
+.about-blog .wrapper .right-box .comment .link-box.profile-2 {
   margin: 4rem 0 2rem 0;
 }
-.blog .wrapper .right-box form fieldset {
+.about-blog .wrapper .right-box form fieldset {
   border: none;
   display: flex;
   flex-direction: row;
@@ -602,7 +601,7 @@ header {
   align-items: flex-start;
   flex-wrap: wrap;
 }
-.blog .wrapper .right-box form fieldset input {
+.about-blog .wrapper .right-box form fieldset input {
   font-family: "Roboto";
   font-weight: 400;
   border-bottom: #4CEEA7 2px solid;
@@ -615,25 +614,25 @@ header {
   max-width: 390px;
   margin: 10px 5px 10px 5px;
 }
-.blog .wrapper .right-box form fieldset input::-moz-placeholder {
+.about-blog .wrapper .right-box form fieldset input::-moz-placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
-.blog .wrapper .right-box form fieldset input:-ms-input-placeholder {
+.about-blog .wrapper .right-box form fieldset input:-ms-input-placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
-.blog .wrapper .right-box form fieldset input::placeholder {
+.about-blog .wrapper .right-box form fieldset input::placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
-.blog .wrapper .right-box form fieldset textarea {
+.about-blog .wrapper .right-box form fieldset textarea {
   font-family: "Roboto";
   font-weight: 400;
   border: #4CEEA7 2px solid;
@@ -646,25 +645,25 @@ header {
   max-width: 790px;
   margin: 10px 5px 10px 5px;
 }
-.blog .wrapper .right-box form fieldset textarea::-moz-placeholder {
+.about-blog .wrapper .right-box form fieldset textarea::-moz-placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
-.blog .wrapper .right-box form fieldset textarea:-ms-input-placeholder {
+.about-blog .wrapper .right-box form fieldset textarea:-ms-input-placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
-.blog .wrapper .right-box form fieldset textarea::placeholder {
+.about-blog .wrapper .right-box form fieldset textarea::placeholder {
   font-family: "Roboto";
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
 }
-.blog .wrapper .right-box form fieldset button {
+.about-blog .wrapper .right-box form fieldset button {
   margin: 0 5px;
   flex-basis: calc(100% - 10px);
   min-width: 10px;
@@ -672,18 +671,13 @@ header {
   max-width: 790px;
   margin: 10px 5px 10px 5px;
 }
-.blog .wrapper .right-box form {
-  background-color: #EFFDF3;
-  position: relative;
-  top: 0px;
-  right: -30px;
-  bottom: 0px;
-  left: 30px;
-}
-.blog .wrapper .right-box form input {
+.about-blog .wrapper .right-box form {
   background-color: #EFFDF3;
 }
-.blog .wrapper .right-box form textarea {
+.about-blog .wrapper .right-box form input {
+  background-color: #EFFDF3;
+}
+.about-blog .wrapper .right-box form textarea {
   background-color: #EFFDF3;
 }
 
@@ -699,7 +693,7 @@ footer .wrapper {
 }
 
 @media (max-width: 1024px) {
-  header {
+  header.home-header {
     background-position: bottom left;
   }
   header .wrapper nav {
@@ -727,17 +721,26 @@ footer .wrapper {
     border-left: none;
     opacity: 0.8;
   }
-  .blog .wrapper .right-box {
+  .about-blog .wrapper .right-box {
     position: static;
   }
 }
 @media (max-width: 768px) {
-  header {
+  header.home-header {
     background-position: bottom left;
+  }
+  .about-blog .wrapper .left-box {
+    max-width: calc(100vw - 120px);
+  }
+  .about-blog .wrapper .right-box {
+    max-width: calc(100vw - 100px);
+  }
+  .about-blog .wrapper .right-box .comment {
+    padding-left: 0;
   }
 }
 @media (max-width: 480px) {
-  header {
+  header.home-header {
     background-position: 0px -60px;
     background-repeat: none;
     background-color: #FAFAFA;
@@ -745,7 +748,7 @@ footer .wrapper {
   header .wrapper {
     position: relative;
   }
-  header .wrapper h1 {
+  header .wrapper h1.home-h1 {
     position: absolute;
     top: calc(90vh - 8rem);
     right: calc(40vw - 2rem);
