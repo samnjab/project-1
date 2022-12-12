@@ -1,4 +1,5 @@
 @use "variables" as *;
+@import "./footer";
 
 header{
     @include fix-header("../../../assets/header-image.jpg", 100vh);
@@ -187,4 +188,4 @@ header{
         }
     }
 }
-@import "./footer";
+// @import "./footer";

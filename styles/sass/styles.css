@@ -388,6 +388,17 @@ p,
   align-items: flex-start;
 }
 
+footer {
+  background-color: #2C2C2C;
+}
+footer .wrapper {
+  color: #FAFAFA;
+  text-align: center;
+  padding: 15px 0;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
 header {
   width: 100vw;
   height: 100vh;
@@ -684,17 +695,6 @@ header .header-img img {
   flex-grow: 1;
   max-width: 400px;
   margin: 5px 10px;
-}
-
-footer {
-  background-color: #2C2C2C;
-}
-footer .wrapper {
-  color: #FAFAFA;
-  text-align: center;
-  padding: 15px 0;
-  font-family: "Roboto";
-  font-weight: 400;
 }
 
 @media (max-width: 1024px) {

@@ -1,5 +1,7 @@
 @use "./variables"as *;
 @use "./header";
+@import "./form";
+@import "./footer";
 header {
     @include fix-header("../../../../assets/blog-header.jpg", 80vh);
 }
@@ -110,7 +112,7 @@ header {
                 }
 
             }
-            @import "./form";
+            // @import "./form";
             form {
                 background-color: $ice;
                 input {
@@ -123,4 +125,4 @@ header {
         }
     }
 }
-@import "./footer";
+// @import "./footer";
