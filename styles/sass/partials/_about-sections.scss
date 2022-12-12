@@ -12,13 +12,10 @@ header {
         .left-box {
             background-color: $white;
             @include wrap($margin:40px, $number-in-a-row:3, $min-width:290px, $max-width:650px);
-            // flex-grow:0;
             position: relative;
             margin:0 0 80px 80px;
-
             .text-box {
                 background-color: $white;
-
                 h4 {
                     @include heading-styler();
                     text-align: left;
@@ -26,7 +23,6 @@ header {
                 }
                 .text-1 {
                     margin: 2rem 1rem 1rem 1rem;
-
                     a {
                         font-weight: bold;
                         font-style: italic;
@@ -42,13 +38,11 @@ header {
             }
             .img-box {
                 width: calc(100% + 40px);
-
                 img {
                     @include detach(0, 80px, 0, -80px);
                 }
             }
         }
-
         .right-box {
             @include wrap($margin:40px, $number-in-a-row:1.5, $min-width:300px, $max-width:650px);
             margin:0 30px 0 50px;

@@ -30,9 +30,6 @@
     }
     .about-blog{
         .wrapper{
-            .left-box{
-    
-            }
             .right-box{
                 position:static;
             }
@@ -47,7 +44,6 @@
     }
     .about-blog{
         .wrapper{
-            
             .left-box{
                 max-width:calc(100vw - 120px);
             }
@@ -63,6 +59,7 @@
 }
 @media(max-width:$mobile){
     header{
+        height:100vh;
         &.home-header{
             background-position: 0px -60px;
             background-repeat: none;
@@ -100,6 +97,63 @@
                     margin-left:0px;
                 }
 
+            }
+        }
+    }
+    
+    .about-blog{
+        .wrapper{
+            margin: 0 auto;
+            max-width:100%;
+            // @include bleed(320px);
+            background-color: pink;
+            .left-box{
+                min-width:290px;
+                max-width:100%;
+                margin:auto;
+                .img-box{
+                    width:100%;
+                    img{
+                        @include detach(0px, 0px, 0px, 0px);
+                    }
+                }
+            }
+            .right-box{
+                min-width:290px;
+                max-width:100%;
+                margin:auto;
+                .post{
+                    .img-box{
+                        img{
+                            @include detach(-30px, 0px, 30px, 0px);
+                        }
+                    }
+                }
+                .comment{
+                    padding:1.5rem;
+                }
+                form{
+                    margin:auto;
+                    max-width:100%;
+                    padding:1rem 0;
+                    fieldset{
+                        padding:0;
+                        input{
+                            max-width:calc(100%);
+                            margin:10px 0;
+                        }
+                        textarea{
+                            max-width:100%;
+                            margin:10px 0;
+                            border-left:none;
+                            border-right:none;
+                        }
+                        button{
+                            max-width:100%;
+                            margin:10px 0;  
+                        }
+                    }
+                }
             }
         }
     }
