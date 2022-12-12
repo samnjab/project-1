@@ -324,6 +324,62 @@ p,
   text-transform: uppercase;
 }
 
+.menu-btn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn .menu-btn__burger {
+  width: 50px;
+  height: 6px;
+  background: #2C2C2C;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn .menu-btn__burger::before, .menu-btn .menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #2C2C2C;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn .menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn .menu-btn__burger::after {
+  transform: translateY(16px);
+}
+
+.menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.nav {
+  transition: all 0.5s ease-in-out;
+}
+.nav.open {
+  background-color: #FDFA69;
+  transform: translateX(50px);
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -698,12 +754,13 @@ footer .wrapper {
   font-weight: 400;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   header .wrapper nav {
     align-self: flex-start;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    align-items: flex-start;
   }
   header .wrapper nav .menu-nav {
     display: flex;

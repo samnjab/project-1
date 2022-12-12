@@ -10,7 +10,15 @@ header{
         padding:20px 0px;
         nav{
             align-self: flex-end;
-            width:40%;
+            width:50%;
+            @include flex-center(row, flex-start, center);
+            .menu-btn{
+                margin:0 1rem;
+                display:none;
+                @media (max-width:800px){
+                    display:block;
+                }
+            }
             .menu-nav{
                 @include flex-center(row, space-between,center);
                 flex-wrap:wrap;

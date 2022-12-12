@@ -1,10 +1,11 @@
 @use "variables" as *;
-@media (max-width:1000px){
+@media (max-width:$sm-scr){
     header{
         .wrapper{
             nav{
                 align-self:flex-start;
                 width:fit-content;
+                align-items: flex-start;
                 .menu-nav{
                     // background-color: lime;
                     @include flex-center(column);
@@ -35,4 +36,10 @@
             }
         }
     }
+}
+@media (max-width:$tablet){
+
+}
+@media (max-width:$mobile) {
+
 }
