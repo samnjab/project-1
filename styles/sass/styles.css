@@ -727,6 +727,10 @@ header .header-img img {
     margin-bottom: 2rem;
     align-self: flex-end;
   }
+  header .wrapper h1.contact-h1 {
+    background-color: rgba(250, 250, 250, 0.5);
+    align-self: stretch;
+  }
   header .header-img {
     right: calc(50% - max(40%, 300px) / 2);
     border-left: none;
@@ -745,6 +749,10 @@ header .header-img img {
   }
   header.home-header {
     background-position: bottom left;
+  }
+  header .wrapper .contact-h1 {
+    background-color: rgba(250, 250, 250, 0.5);
+    align-self: stretch;
   }
   .about-blog .wrapper {
     margin: 0 auto;

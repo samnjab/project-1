@@ -28,7 +28,7 @@ header {
             @include heading-styler;
             @include responsive-size(4rem, 1/3, 4vw);
             z-index: 20;
-            margin-bottom: 35vh;
+            margin-bottom: 250px;
         }
     }
 }

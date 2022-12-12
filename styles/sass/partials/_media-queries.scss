@@ -22,7 +22,11 @@
             }
             h1{
                 margin-bottom:2rem;
-                align-self: flex-end;  
+                align-self: flex-end;
+                &.contact-h1{
+                    background-color: rgb($white, 0.5);
+                    align-self: stretch;
+                }  
             }  
         }
         .header-img{
@@ -53,6 +57,12 @@
         height:100vh;
         &.home-header{
             background-position:bottom left;
+        }
+        .wrapper{
+            .contact-h1{
+                background-color: rgb($white, 0.5);
+                align-self: stretch;
+            }
         }
     }
     .about-blog{
