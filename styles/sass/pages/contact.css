@@ -536,6 +536,18 @@ header {
   background-image: url("../../../../assets/contact-header.jpg");
   background-size: cover;
 }
+@media (max-width: 1200px) {
+  header {
+    background-repeat: no-repeat;
+    background-position: -100px 0px;
+  }
+}
+@media (max-width: 1200px) {
+  header .wrapper h1 {
+    align-self: flex-end;
+    margin-bottom: 20vh;
+  }
+}
 
 .touch {
   background-color: #EFFDF3;
@@ -641,6 +653,9 @@ header {
   }
   .about-blog .wrapper .right-box {
     position: static;
+  }
+  .touch .wrapper .form-box {
+    margin: 0;
   }
 }
 @media (max-width: 768px) {

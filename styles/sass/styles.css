@@ -732,6 +732,9 @@ header .header-img img {
   .about-blog .wrapper .right-box {
     position: static;
   }
+  .touch .wrapper .form-box {
+    margin: 0;
+  }
 }
 @media (max-width: 768px) {
   header {

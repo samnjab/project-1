@@ -5,6 +5,18 @@
 
 header {
     @include fix-header("../../../../assets/contact-header.jpg", 80vh);
+    @media (max-width:1200px){
+        background-repeat: no-repeat;
+        background-position: -100px 0px;
+    }
+    .wrapper{
+        h1{
+            @media (max-width:1200px) {
+                align-self: flex-end;
+                margin-bottom:20vh;
+            }
+        }
+    }
 }
 .touch {
     background-color: $ice;

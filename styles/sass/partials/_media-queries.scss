@@ -36,6 +36,14 @@
             }
         }
     }
+
+    .touch{
+        .wrapper{
+            .form-box{
+                margin:0;      
+            }
+        }
+    }
 }
 @media (max-width:$tablet){
     header{
