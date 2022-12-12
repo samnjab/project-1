@@ -628,6 +628,7 @@ header .wrapper h1 {
   }
   header.home-header {
     background-position: bottom left;
+    background-repeat: no-repeat;
   }
   header.contact-header {
     background-position: -300px 0;
