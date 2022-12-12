@@ -778,9 +778,10 @@ header .wrapper h1 {
   }
   .links .wrapper .link-box {
     min-width: 290px;
+    margin: auto;
   }
   .links .wrapper .link-box p {
-    margin-left: 0px;
+    margin-left: 5px;
   }
   .about-blog .wrapper {
     margin: 0 auto;

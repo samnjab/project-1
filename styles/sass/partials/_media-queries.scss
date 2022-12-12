@@ -178,8 +178,9 @@
         .wrapper{
             .link-box{
                 min-width:calc($min-dim - 30px);
+                margin:auto;
                 p{
-                    margin-left:0px;
+                    margin-left:5px;
                 }
 
             }
