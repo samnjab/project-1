@@ -530,6 +530,74 @@ footer .wrapper {
   font-weight: 400;
 }
 
+header .wrapper nav .menu-btn.closed {
+  background-color: #FDFA69;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+header .wrapper nav .menu-btn .menu-btn__burger {
+  width: 50px;
+  height: 6px;
+  background: #2C2C2C;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+header .wrapper nav .menu-btn .menu-btn__burger::before, header .wrapper nav .menu-btn .menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #2C2C2C;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+header .wrapper nav .menu-btn .menu-btn__burger::before {
+  transform: translateY(-16px);
+}
+header .wrapper nav .menu-btn .menu-btn__burger::after {
+  transform: translateY(16px);
+}
+header .wrapper nav .menu-btn.open {
+  background-color: #FDFA69;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+header .wrapper nav .menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+header .wrapper nav .menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+header .wrapper nav .menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.nav {
+  transition: all 0.5s ease-in-out;
+}
+.nav.open {
+  background-color: #FDFA69;
+  transform: translateX(50px);
+}
+
 header {
   width: 100vw;
   height: 80vh;
@@ -706,18 +774,24 @@ header {
   }
   header .wrapper nav {
     align-self: flex-start;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: pink;
   }
   header .wrapper nav .menu-nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: none;
+    flex-wrap: nowrap;
+    background-color: #FDFA69;
+    width: 100%;
   }
   header .wrapper nav .menu-nav li {
+    flex-grow: 0;
     margin: 10px 0;
   }
   header .wrapper h1 {

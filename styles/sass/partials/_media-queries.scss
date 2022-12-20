@@ -12,11 +12,17 @@
         .wrapper{
             nav{
                 align-self:flex-start;
-                width:fit-content;
+                width:100%;
+                @include flex-center(column, center, flex-start);
+                background-color: pink;
                 .menu-nav{
                     @include flex-center(column);
-                    flex-wrap:none;
+                    flex-wrap:nowrap;
+                    background-color: $canary;
+                    width:100%;
+                    // transform: translateX(-50px);
                     li{
+                        flex-grow:0;
                         margin:10px 0;
                     }
                 }

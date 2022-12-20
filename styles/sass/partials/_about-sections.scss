@@ -2,6 +2,7 @@
 @use "./header";
 @import "./form";
 @import "./footer";
+@import "./menu-button";
 header {
     @include fix-header("../../../../assets/blog-header.jpg", 80vh);
 }
