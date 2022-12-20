@@ -65,6 +65,14 @@ section{
         display:inline-block;
         width:100%;
         text-align: center;
+        opacity:0.8;
+        &:hover {
+            opacity: 1;
+        }
+        
+        &:focus {
+            opacity:1;
+        }
     }
 }
 p,

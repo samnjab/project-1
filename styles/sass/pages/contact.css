@@ -304,6 +304,13 @@ section {
   display: inline-block;
   width: 100%;
   text-align: center;
+  opacity: 0.8;
+}
+.button a:hover {
+  opacity: 1;
+}
+.button a:focus {
+  opacity: 1;
 }
 
 p,

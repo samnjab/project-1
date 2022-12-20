@@ -304,6 +304,13 @@ section {
   display: inline-block;
   width: 100%;
   text-align: center;
+  opacity: 0.8;
+}
+.button a:hover {
+  opacity: 1;
+}
+.button a:focus {
+  opacity: 1;
 }
 
 p,
@@ -693,6 +700,10 @@ header .header-img img {
   align-items: flex-center;
   flex-wrap: wrap;
   margin: 15px 15px 15px 0;
+  transition: 0.2s ease;
+}
+.links .wrapper .link-box .title-box:hover, .links .wrapper .link-box .title-box:focus {
+  transform: scale(0.95);
 }
 .links .wrapper .link-box .title-box h4 {
   font-family: "Playfair Display";
