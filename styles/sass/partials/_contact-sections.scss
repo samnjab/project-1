@@ -1,8 +1,8 @@
 @use "./variables" as *;
+@import "./menu-button";
 @use "./header";
 @import "./form";
 @import "./footer";
-@import "./menu-button";
 
 header {
     @include fix-header("../../../../assets/contact-header.jpg", 80vh);

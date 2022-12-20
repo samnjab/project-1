@@ -15,7 +15,6 @@ header{
             align-self: flex-end;
             width:50%;
             @include flex-center(row, space-between,center);
-
             .menu-btn {
                 &.closed{
                     display: none;
@@ -23,7 +22,6 @@ header{
                         @include flex-center(row, center, center);
                     }
                 }
-            
             }
             .menu-nav{
                 @include flex-center(row, space-between,center);

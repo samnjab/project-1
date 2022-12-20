@@ -36,5 +36,11 @@ form {
             @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:790px);
             margin: 10px 5px 10px 5px;
         }
+        .result{
+            @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:790px);
+            margin: 10px 5px 10px 5px;
+            background-color: $sea-green;
+        }
+
     }
 }

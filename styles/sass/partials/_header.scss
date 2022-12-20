@@ -8,7 +8,17 @@ header {
         padding: 20px 0px;
         nav {
             align-self: flex-end;
-            width: 40%;
+            width: 50%;
+            @include flex-center(row, space-between, center);
+            .menu-btn {
+                &.closed {
+                    display: none;
+                    @media (max-width:$sm-scr) {
+                        @include flex-center(row, center, center);
+                    }
+                }
+            
+            }
             .menu-nav {
                 @include flex-center(row, space-between, center);
                 flex-wrap: wrap;

@@ -20,3 +20,12 @@ menuBtn.addEventListener('click', () => {
     //     menuOpen:false;
     // }
 });
+
+const formElement = document.querySelector('form');
+const resultDiv = document.querySelector('.result')
+formElement.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const pElement = document.createElement('p');
+    pElement.textContent = "Posted!"
+    resultDiv.appendChild(pElement);
+})

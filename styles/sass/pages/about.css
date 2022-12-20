@@ -419,7 +419,22 @@ header .wrapper {
 }
 header .wrapper nav {
   align-self: flex-end;
-  width: 40%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .wrapper nav .menu-btn.closed {
+  display: none;
+}
+@media (max-width: 1024px) {
+  header .wrapper nav .menu-btn.closed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 header .wrapper nav .menu-nav {
   display: flex;
