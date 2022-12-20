@@ -14,16 +14,23 @@
                 align-self:flex-start;
                 width:100%;
                 @include flex-center(column, center, flex-start);
-                background-color: pink;
                 .menu-nav{
                     @include flex-center(column);
                     flex-wrap:nowrap;
-                    background-color: $canary;
                     width:100%;
+                    &.open{
+                        background-color: $canary;
+                        display:none;
+                    }
                     // transform: translateX(-50px);
                     li{
                         flex-grow:0;
                         margin:10px 0;
+                    }
+                    &.closed{
+                        background-color: $canary;
+                        display:flex;
+
                     }
                 }
             }

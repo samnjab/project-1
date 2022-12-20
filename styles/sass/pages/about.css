@@ -548,8 +548,12 @@ footer .wrapper {
   font-weight: 400;
 }
 
-header .wrapper nav .menu-btn.closed {
+header .wrapper nav .menu-btn {
   background-color: #FDFA69;
+  border-radius: 10px;
+  margin: 4px 0;
+}
+header .wrapper nav .menu-btn.closed {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -559,6 +563,28 @@ header .wrapper nav .menu-btn.closed {
   height: 80px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+}
+header .wrapper nav .menu-btn.open {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+header .wrapper nav .menu-btn.open .menu-btn__burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+header .wrapper nav .menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+header .wrapper nav .menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
 }
 header .wrapper nav .menu-btn .menu-btn__burger {
   width: 50px;
@@ -583,29 +609,6 @@ header .wrapper nav .menu-btn .menu-btn__burger::before {
 }
 header .wrapper nav .menu-btn .menu-btn__burger::after {
   transform: translateY(16px);
-}
-header .wrapper nav .menu-btn.open {
-  background-color: #FDFA69;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
-}
-header .wrapper nav .menu-btn.open .menu-btn__burger {
-  transform: translateX(-50px);
-  background: transparent;
-  box-shadow: none;
-}
-header .wrapper nav .menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg) translate(35px, -35px);
-}
-header .wrapper nav .menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg) translate(35px, 35px);
 }
 
 .nav {
@@ -797,7 +800,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-color: pink;
   }
   header .wrapper nav .menu-nav {
     display: flex;
@@ -805,12 +807,19 @@ header {
     justify-content: flex-start;
     align-items: flex-start;
     flex-wrap: nowrap;
-    background-color: #FDFA69;
     width: 100%;
+  }
+  header .wrapper nav .menu-nav.open {
+    background-color: #FDFA69;
+    display: none;
   }
   header .wrapper nav .menu-nav li {
     flex-grow: 0;
     margin: 10px 0;
+  }
+  header .wrapper nav .menu-nav.closed {
+    background-color: #FDFA69;
+    display: flex;
   }
   header .wrapper h1 {
     margin-bottom: 2rem;

@@ -18,9 +18,8 @@ header{
 
             .menu-btn {
                 &.closed{
-                   
                     display: none;
-                    @media (max-width:800px) {
+                    @media (max-width:$sm-scr) {
                         @include flex-center(row, center, center);
                     }
                 }
