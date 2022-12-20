@@ -28,4 +28,5 @@ formElement.addEventListener('submit', (event) => {
     const pElement = document.createElement('p');
     pElement.textContent = "Posted!"
     resultDiv.appendChild(pElement);
+    pElement.classList.add('message');
 })
